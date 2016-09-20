@@ -1,0 +1,99 @@
+html, body{
+    height: 100%;
+}
+#login{
+	background-image: url("/assets/background.jpg");
+	background-size: cover;
+	background-position: center;
+		
+	     height: 100%;
+	    width: 100%;
+	    overflow: hidden;
+	    position: absolute;
+
+}
+
+legend{
+	border: none ;
+}
+.red{
+	color: #7f1000;
+}
+.float{
+	float:none;
+}
+.absolute{
+
+	position:absolute;
+	
+}
+.medium-white{
+	background-color: rgba(255,255,255,0.7);
+}
+.form{
+	top: 30%;
+}
+.imagen{
+	bottom: 0;
+	left: 70%;
+}
+.forgot{
+	font-style: italic;
+	color: #264BFF;
+	font-size: 19px;
+}
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, CornflowerBlue, CornflowerBlue);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, CornflowerBlue, CornflowerBlue);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+

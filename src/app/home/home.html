@@ -1,0 +1,56 @@
+<div class="cover">
+	<div class="group wow slideInUp">
+		<span class="first">
+			@synergy-gb Test
+			<span class="icon-edit new"></span>
+		</span>
+		<ul class="timeline">
+			<li ng-repeat="element in home.elements">
+				<div class="avatar" data-toggle="modal" data-target="#myModal{{element.id}}">
+          <img ng-src="{{element.thumbnailUrl}}"  >
+					<div class="hover">
+						<div class="icon-twitter"></div>
+					</div>
+				</div>
+				<div class="bubble-container">
+					<div class="bubble">
+					<div class="retweet">
+						<div class="icon-retweet"></div>
+					</div>
+						<h3>@synergy-gb</h3> says: <br/>
+					{{element.title}}
+						<div class="over-bubble">
+							<div class="icon-mail-reply action"></div>
+							<div class="icon-retweet action"></div>
+							<div class="icon-star"></div>
+						</div>
+					</div>
+
+					<div class="arrow"></div>
+				</div>
+				<div id="myModal{{element.id}}" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Super Awesome Image</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" ng-src="{{element.url}}" alt="" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+			</li>
+
+		</ul>
+
+	</div>
+	</div>
+</div>

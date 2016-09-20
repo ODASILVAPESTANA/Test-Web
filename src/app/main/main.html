@@ -1,0 +1,59 @@
+<div id="login" >
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-md-4 medium-white absolute form wow bounceInLeft">
+        <form class="form-horizontal" name="form" ng-submit="main.submitForm()">
+          <fieldset>
+
+            <!-- Form Name -->
+            <legend>Inicio de Sesión</legend>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+              
+              <div class="col-md-5 col-md-offset-7">
+                <select id="selectbasic" name="selectbasic" class="form-control classic" ng-model="main.select">
+                  <option value="">Seleccione</option>
+                  <option value="V">V</option>
+                  <option value="E">E</option>
+                  <option value="P">P</option>
+                </select>
+              </div>
+            </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            
+            <div class="col-md-12">
+            <input ng-model="main.user" id="textinput" name="textinput" type="text" placeholder="Usuario" class="form-control input-md">
+            
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group">
+            
+            <div class="col-md-12">
+              <input ng-model="main.pass" id="passwordinput" name="passwordinput" type="password" placeholder="Contraseña" class="form-control input-md">
+              
+            </div>
+          </div>
+          <a href="" ng-click="main.click()"><span class="forgot">¿Olvidó su contraseña? </span></a>
+
+          <div class="form-group">
+            
+            <div class="col-md-3 center-block float">
+              <input type="submit" class="btn btn-primary"value="Aceptar" >
+              
+            </div>
+          </div>
+          </fieldset>
+        </form>
+
+      </div>
+      <div class="absolute imagen">
+        <img src="/assets/descarga.png" class="img-responsive">
+      </div>
+    </div>
+  </div>
+</div>
