@@ -1,0 +1,20 @@
+Proceso de desarrollo prueba synergy
+
+- Se genera scafolding de yeoman con el generator "angular gulp"
+
+- Se crean los controladores y rutas necesarias.
+
+- Se maqueta la vista de login usando bootstrap.
+
+- Se disparan modales dependiendo del campo faltante en el formulario de login.
+
+- Se crea el servicio para conectar con el webservice.
+
+- se crean 2 métodos, uno para el login y otro para la obtención de la data.
+
+- Se crea la vista de home, donde se mostrarán los datos provenientes del webservice.
+
+- Se hace un ng-repeat para inyectar los datos provenientes del webservice.
+
+- Se crea un modal para mostrar la imagen dando click sobre el thumbnail.
+
