@@ -1,0 +1,26 @@
+
+<div class="formulario">
+  <form role="form" name="form">
+      <h3>Inicio de Sesión</h3>
+        <div class="form-group pull-right">
+        <select ng-model="login.type" class='form-control'  >
+                <option value='' selected=true>Seleccione</option>
+                <option value='V'>V</option>
+                <option value='E'>E</option>
+                <option value='P'>P</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input ng-model="login.username" type="text" id="username" class="form-control" placeholder="Usuario" autofocus=""  />
+        </div>
+      <div class="form-group">
+          <input ng-model="login.password" type="password" id="password" class="form-control" placeholder="Contraseña" />
+      </div>
+      <div class="form-group">
+        <a onclick="alert('recuperar contraseña')" href="#">¿Olvidó su contraseña?</a>
+      </div>
+      <div class="form-group text-center">
+        <button  class="btn btn-primary btn-lg" ng-click="enviar()">Aceptar</button>
+      </div>
+    </form>
+</div>

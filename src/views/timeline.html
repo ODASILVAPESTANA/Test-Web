@@ -1,0 +1,10 @@
+<div class="container">
+    <h2 class="letras">Timeline</h3>
+    <div ng-repeat="element in data" >
+      <div class="row">
+        <div class="col-md-2 picture hover11"><figure><a ng-href="{{element.url}}" class=""><img ng-src="{{element.thumbnailUrl}}" alt=""> </a> </figure> </div>
+        <div class="col-md-4 letras"><h4>{{element.id}} - {{element.title}}</h3></div>
+      </div>
+      <br/>
+    </div>
+</div>

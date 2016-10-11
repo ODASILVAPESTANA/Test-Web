@@ -1,9 +1,24 @@
 <html>
   <head>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/master.css" media="screen" title="no title" charset="utf-8">
+    <!-- Javascript -->
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/ui-bootstrap-tpls-0.11.0.js"></script>
+
     <script src="//localhost:35729/livereload.js"></script>
+    <script src="/src/app.js"></script>
   </head>
-  <body>
-    <h1> Grunt is running! </h1>
-    <h2> :) </h2>
-  </body>
+  <!-- Angular app -->
+  <body ng-app="app">
+        <div ng-view></div>
+
+    <!-- Footer -->
+    <footer>
+          <img src="assets/images/logo.png">
+    </footer>
+
+    </body>
 </html>

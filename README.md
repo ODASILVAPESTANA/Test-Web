@@ -1,4 +1,4 @@
-# Prueba de admisión: Destrezas Web
+# Prueba de admisión: Destrezas Web Realizada por Fernando Pineda
 
 Esta prueba está diseñada para medir tus destrezas en el área de la programación web. Para resolverla debes tener en cuenta que debes usar las siguientes tecnologías:
 
