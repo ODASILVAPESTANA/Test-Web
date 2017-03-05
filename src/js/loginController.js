@@ -18,7 +18,7 @@ const modalPass = `
 
 
 
-app.controller('loginController', function($scope, $http, $location, $uibModal) {
+app.controller('loginController', function($scope, $http, $location, $uibModal, $rootScope) {
   
   	$scope.submit = function(isValid){
     // check to make sure the form is completely valid
@@ -53,9 +53,9 @@ app.controller('loginController', function($scope, $http, $location, $uibModal) 
   				  {"username":$scope.username,"password":$scope.password,"type":$scope.type})
   			 .then(
   			  function successCallback(response){
-					//$rootScope.cid = response.data.cid;
-					console.log(response.data);
-					console.log(response.data.cid);
+          console.log(response.data);
+          console.log(response.data.cid);
+					$rootScope.cid = response.data.cid;
 					$location.path('/timeline');
 			  		}
 			  ,function errorCallback(response){
@@ -63,7 +63,7 @@ app.controller('loginController', function($scope, $http, $location, $uibModal) 
 					console.log(response.data);
 					console.log(response.data.cid);		
 					if (response.data.status=="failed"){
-						alert('Por favor Verifique su usuario y Contraseña');
+						alert('Por favor verifique el tipo de usuario, el y contraseña');
 					}
 			  }
 			 );
