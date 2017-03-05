@@ -9,30 +9,24 @@ body,html
 }
 
 .wrapper {
-	position: absolute;
+  position: absolute;
   margin-top: 15%;
   margin-bottom: 40%;
 }
 
 .form-signin {
-  max-width: 100%;
   padding: 5% 5% 5%;
   margin: 0 auto;
   background-color:rgba(255, 255, 255, 0.8); //semi-transparent white
   border: 1px solid rgba(0,0,0,0.1);
 }
 
-h3 {
-  font-size: 1px;
-
-}
 #drop {
 		position: relative;
 		left: 40%;
 		width: 60%;
 		margin-bottom: 2%;
-}
-
+	}
 
 input{
 		border-bottom-left-radius: 0;

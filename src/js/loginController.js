@@ -1,18 +1,18 @@
 const modalType= `
         <div class="modal-body">
-          <p>Debe seleccionar un tipo de usuario</p>
+          <p align="center">Debe seleccionar un tipo de usuario</p>
         </div>
 `;
 
 const modalUserName = `
         <div class="modal-body">
-          <p>Introduzca su nombre de usuario</p>
+          <p align="center">Introduzca su nombre de usuario</p>
         </div>
 `;
 
 const modalPass = `
         <div class="modal-body">
-          <p>Introduzca su contraseña</p>
+          <p align="center">Introduzca su contraseña</p>
         </div>
 `;
 
@@ -63,7 +63,7 @@ app.controller('loginController', function($scope, $http, $location, $uibModal, 
 					console.log(response.data);
 					console.log(response.data.cid);		
 					if (response.data.status=="failed"){
-						alert('Por favor verifique sus datos su tipo, nombre de usuario o contraseña no coinciden');
+						alert('Por favor verifique sus datos. Su tipo de usuario, nombre de usuario o contraseña no coinciden');
 					}
 			  }
 			 );
