@@ -9,10 +9,9 @@ body,html
 }
 
 .wrapper {
-	width: 35%;
-	height: 30%
 	position: absolute;
   margin-top: 15%;
+  margin-bottom: 40%;
 }
 
 .form-signin {
@@ -23,6 +22,10 @@ body,html
   border: 1px solid rgba(0,0,0,0.1);
 }
 
+h3 {
+  font-size: 1px;
+
+}
 #drop {
 		position: relative;
 		left: 40%;
@@ -54,27 +57,8 @@ input[type="password"] {
 	}
 
 
-/*!
- * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-.slide-image {
-    width: 120%;
-}
-
-.carousel-holder {
-    margin-bottom: 30px;
-}
-
-.carousel-control,
-.item {
-    border-radius: 4px;
 }
 
 .caption {

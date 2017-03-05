@@ -21,25 +21,25 @@ const modalPass = `
 app.controller('loginController', function($scope, $http, $location, $uibModal, $rootScope) {
   
   	$scope.submit = function(isValid){
-    // check to make sure the form is completely valid
+
     if (!isValid) {
 
   		if (angular.isUndefined($scope.type)){
-  			//alert('no pusiste tipo');
+
   			console.log(angular.isUndefined($scope.type));
   			$uibModal.open({
 				template: modalType
 			});
   		}
   		else if (angular.isUndefined($scope.username)){
-  			//alert('no pusiste usuario');
+
   			$uibModal.open({
 				template: modalUserName
 			});
   				console.log(angular.isUndefined($scope.username));
   		}
   		else if (angular.isUndefined($scope.password)){
-  			//alert('no pusiste clave');
+
   			$uibModal.open({
 				template: modalPass
 			});
@@ -63,7 +63,7 @@ app.controller('loginController', function($scope, $http, $location, $uibModal, 
 					console.log(response.data);
 					console.log(response.data.cid);		
 					if (response.data.status=="failed"){
-						alert('Por favor verifique el tipo de usuario, el y contraseña');
+						alert('Por favor verifique sus datos su tipo, nombre de usuario o contraseña no coinciden');
 					}
 			  }
 			 );
