@@ -1,0 +1,18 @@
+<div class="row container_header_tl nomargin_left nomargin_right">
+	<div class="col-md-12 col-sm-12 col-xs-12 header_tl">
+		<h1>Time Line</h1>
+	</div>
+</div>
+<div class="row container_list_tl nomargin_left nomargin_right">
+	<div ng-repeat="post in listPost" class="row container_card_tl nomargin_left nomargin_right">
+		<div class="row card_tl nomargin_left nomargin_right" data-id-post="{{post.id}}">
+			<div class="col-md-2 col-sm-4 col-xs-4 image_post">
+				<a href="{{post.url}}" target="_blank">
+				<img ng-src="{{post.thumbnailUrl}}"/></a>
+			</div>
+			<div class="col-md-10 col-sm-8 col-xs-8 title_post">
+				<h2 class="nomargin_top"><a class="card_link" href="">{{post.title | capitalize}}</a></h2>
+			</div>
+		</div>
+	</div>
+</div>

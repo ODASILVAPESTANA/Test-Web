@@ -1,0 +1,58 @@
+<div class="row nomargin_left nomargin_right">
+  <div class="row nomargin_left nomargin_right container_login"></div>
+    <div class="col-md-6 col-sm-8 col-xs-10 container_form_init_session">
+        <div class="row nomargin_left nomargin_right">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+                <h3 class="init_sesion_title"> 
+                Inicio de Sesi&oacute;n</h3>
+            </div>
+        </div>
+        <div class="row nomargin_left nomargin_right">
+            <div class="col-md-12 col-sm-12 col-xs-12 nomargin">
+            <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+                <div class="form-group col-md-6 col-sm-6 col-xs-12 col-md-offset-6 col-sm-offset-6 nopadding_left nopadding_right"> 
+                    <select name="type" id="user_type" ng-model="type" autofocus="autofocus" required="required" class="btn btn-primary dropdown-toggle col-md-12 col-sm-12 col-xs-12">
+                      <option class="placeholder_select" value="">Seleccione...</option> <!-- not selected / blank option -->
+                      <option value="E">E</option>
+                      <option value="P">P</option>
+                      <option value="V">V</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="name" id="user_name" placeholder="Usuario" autofocus="autofocus" class="form-control" ng-pattern="/^[a-zA-Z0-9]*$/" ng-model="name" required>
+                    <p ng-show="userForm.name.$invalid" class="help-block">Usuario debe contener solo letras o n&uacute;meros.</p>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" name="password" id="user_password" placeholder="Contraseña" autofocus="autofocus" class="form-control" ng-model="password" ng-minlength="8" ng-maxlength="12" required>
+                    <p ng-show="userForm.password.$error.minlength" class="help-block">Mínimo de caracteres requeridos 8.</p>
+                    <p ng-show="userForm.password.$error.maxlength" class="help-block">Máximo de caracteres requeridos 12.</p>
+                </div>
+                <div><a id="link_remember_pass" href="#" onClick="remember_pass()">&iquest;Olvid&oacute; su contraseña?</a></div>
+              
+                <div class="row nomargin_left nomargin_right container_b_acept text-center">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <button type="submit" class="btn btn-default b_acept" id="b_acept">Aceptar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal alert campos vacios -->
+<div id="modalAlertLogin" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Alerta</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{show_val_modal}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
