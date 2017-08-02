@@ -1,0 +1,18 @@
+<div class="col-lg-12" id="textStyle" align="center">
+<h1>Timeline</h1>
+</div>
+<div class="container-fluid" align="center">
+	<div ng-repeat="element in data" class="col-lg-3 col-md-4 col-sm-6" align="center" class="container">
+		<div class="container"> 
+			  <img class="image" ng-src="{{element.thumbnailUrl}}"></img>
+			  <a id="textA" ng-href="{{element.url}}">{{element.id}}</a>
+			  <div class="middle"> 
+				<div class="text"> 
+				 {{element.title}} 
+				</div>
+			  </div>
+		</div>
+	</div>
+</div>
+<div class="logoFooter col-lg-12 col-md-12 col-sm-12">
+</div>
