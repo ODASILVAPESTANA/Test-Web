@@ -1,0 +1,23 @@
+<div style="background-color:rgba(255, 255, 255, 0.8);width:98%;margin-left:1%;margin-right:2%;margin-top:3%">
+    <div class="container" ng-controller="timelineController">
+        <div class="row">
+            <div class="col-lg-12" align="center">
+                <h1 class="page-header">LÍNEA DE TIEMPO</h1>
+            </div>
+            <div class="col-md-12" text-center>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6" ng-repeat="dato in datos">
+                        <div class="thumbnail">
+                            <img ng-src="{{dato.thumbnailUrl}}"alt="">
+                            <div class="caption">
+                                <h4><a>Elemento {{dato.id}}</a></h4>
+                                <p href="{{dato.url}}"> {{dato.title}}</p>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

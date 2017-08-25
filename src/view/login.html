@@ -1,0 +1,49 @@
+<style>
+    .h3, h3 {
+        margin-top: -50px;
+        padding-bottom: 30px;
+    }
+    .form-signin{
+        padding-bottom: 30px;
+    }
+    label {
+        margin-top: -30px;
+        float: right;
+        font-weight: 100;
+    }
+    .btn-group-lg>.btn, .btn-lg {
+        font-size: 12px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="wrapper col-lg-4 col-md-5 col-sm-6" >
+            <form name="userForm" ng-submit="submit(userForm.$valid)" class="form-signin" ng-controller="loginController" novalidate>
+                <h3>Inicio de Sesión</h3>
+                <div class="form-group">                    
+                    <label >Tipo de Usuario:</label>    
+                    <fieldset>                  
+                        <select id="drop" class="form-control btn btn-primary" ng-model="type" required>
+                            <option value="" >Seleccione...</option>
+                            <option value="V">V</option>
+                            <option value="E">E</option>
+                            <option value="P">P</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="username" name="username" placeholder="Usuario" required autofocus="" />
+
+                </div> 
+                <div class="form-group">
+                    <input type="password" class="form-control" ng-model="password" name="password" placeholder="Contraseña" required/>
+                </div>
+                <a data-toggle="modal" class="btn" onclick="alert('Recuperar contraseña')">¿Olvidó su Contraseña?</a>
+                <br/>    
+                <div class="text-center">
+                    <button class="btn btn-lg btn-primary" id="submit" type="submit">Aceptar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
