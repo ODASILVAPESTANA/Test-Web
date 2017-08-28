@@ -1,0 +1,82 @@
+
+  <div class="container" ng-controller="appCtrl">
+    <div class="row" >
+      <div class="col-md-4 col-md-offset-7">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Inicio Session</div>
+
+          <div class="panel-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-5">
+                  <select placeholder="Seleccione" ng-model="datos.type" class="form-control" required>
+                            	<option ng-value="V">V</option>
+                            	<option ng-value="E">E</option>
+                            	<option ng-value="P">P</option>
+    						</select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="Email" ng-model="datos.username" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password" ng-model="datos.password" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <a onclick="alert('recuperar contraseña')">Olvido su contraseña?</a>
+                </div>
+              </div>
+              <div class="form-group last">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-primary" ng-click="ingresar()">
+                                Aceptar</button>
+
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+        <img class="logo" src="assets/images/by-synergy-gb.png">
+      </div>
+
+
+
+<style>
+  .logo {
+    margin-left: 1100px;
+  }
+
+  body {
+    background: url("assets/images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .col-md-offset-7 {
+    margin-left: -300px;
+    margin-right: -100px;
+  }
+
+  .panel-default {
+    opacity: 0.9;
+    margin-top: 500px;
+  }
+
+  .btn-sm {
+    color: white;
+    background-color: #008CBA;
+  }
+
+  .form-group.last {
+    margin-bottom: 0px;
+  }
+</style>

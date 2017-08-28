@@ -1,0 +1,78 @@
+
+<body>
+  <div class="container" ng-app="app">
+    <div class="row" ng-controller="timelineCtrl">
+      <div class="col-md-4 col-md-offset-7">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Timeline</div>
+
+          <div class="panel-body">
+            <div ng-cloak flex layout-padding>
+                <md-content class="md-padding" layout-xs="column" layout="row">
+                    <div flex-xs flex-gt-xs="90" layout="column">
+                        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+
+                            <md-card-actions layout="row" layout-align="center center">
+                                <div flex ng-cloak>
+                                    <md-grid-list md-cols="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="8" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="4px" md-gutter-gt-sm="8px">
+                                        <span ng-if="!objetos">No consiguio resultados</span>
+                                        <md-grid-tile ng-if="objetos" ng-repeat="object in objetos" md-rowspan="2" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
+                                            <md-content class="md-padding">
+                                                <img ng-src="{{object.thumbnailUrl}}" style="width:100px;height:100px;" />
+                                                <div class="md-list-item-text">
+                                                    <h1>{{object.title}}</h1>
+                                                </div>
+                                            </md-content>
+
+                                        </md-grid-tile>
+                                    </md-grid-list>
+                                </div>
+                            </md-card-actions>
+                        </md-card>
+
+                    </div>
+
+                </md-content>
+            </div>
+          </div>
+
+        </div>
+        <img class="logo" src="assets/images/by-synergy-gb.png">
+      </div>
+</body>
+
+
+<style>
+  .logo {
+    margin-top: 600px;
+    margin-left: 400px;
+  }
+
+  body {
+    background: url("assets/images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .panel-default {
+    opacity: 0.9;
+
+  }
+
+  .btn-sm {
+    color: white;
+    background-color: #008CBA;
+  }
+
+  .form-group.last {
+    margin-bottom: 0px;
+  }
+</style>
