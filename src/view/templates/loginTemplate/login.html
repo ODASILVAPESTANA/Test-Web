@@ -1,0 +1,55 @@
+<style>
+    body,html
+    {
+        width: 100%;
+        background-image: url("resources/loginTemplate/images/by-synergy-gb.png"),url("resources/loginTemplate/images/background.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: right bottom, center center;
+        background-attachment: fixed, fixed;
+        -webkit-background-size:35%, cover;   /* Safari 3.0 */
+        -moz-background-size: 35%, cover;	/* Gecko 1.9.2 (Firefox 3.6) */
+        -o-background-size: 35%, cover;		/* Opera 9.5 */
+        background-size: 35%, cover;		    /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+    } 
+</style>
+<div class="container">
+    <div class="row">
+        <div class="wrapper col-lg-4 col-md-5 col-sm-6" >
+            <form name="userForm" ng-submit="submit(userForm.$valid)"
+                  class="form-signin"
+                  ng-controller="loginController" 
+                  novalidate
+                  >
+                <h3>Inicio de Sesión</h3>
+                <div class="form-group">             
+                    <fieldset>                  
+                        <select id="drop" class="form-control btn btn-primary btn-tipo-usuario"
+                                ng-model="type" required>
+                            <option value="" >Seleccione tipo de usuario</option>
+                            <option value="V">V</option>
+                            <option value="E">E</option>
+                            <option value="P">P</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="username" name="username" placeholder="Usuario" required autofocus="" />
+                </div> 
+                <div class="form-group">
+                    <input type="password" class="form-control" ng-model="password" name="password" placeholder="Contraseña" required/>
+                </div>
+                <br/>    
+                <div class="text-center btn-Aceptar">
+                    <button class="btn btn-lg btn-primary" id="submit" type="submit">Aceptar</button>
+                </div>
+            </form>
+            <form name="recuperarContrasenia" ng-submit="submit(recuperarContrasenia.$valid)"  
+                  class="form-signin recuperarLogin"                   
+                  ng-controller="recuperarContrasenia" 
+                  novalidate
+                  >
+                <button class="btn btn-lg btn-recuperarLogin" id="submit2" type="submit">¿Olvidó su Contraseña?</button>
+            </form>
+        </div>
+    </div>
+</div>

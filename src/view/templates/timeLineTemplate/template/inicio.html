@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Inicio</title>
+        <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+        <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" href="style.css" media="screen">
+        <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+        <link rel="stylesheet" href="style.responsive.css" media="all">
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
+        <script src="script.responsive.js"></script>
+        <style>.synergy-content .synergy-postcontent-0 .layout-item-0 { color: #EDEDED;  }
+            .synergy-content .synergy-postcontent-0 .layout-item-1 { border-top-width:1px;border-top-style:solid;border-top-color:#A6A6A6;margin-top: 5px;margin-bottom: 5px;  }
+            .synergy-content .synergy-postcontent-0 .layout-item-2 { border-right-style:solid;border-right-width:1px;border-right-color:#A6A6A6; color: #EDEDED; padding-right: 10px;padding-left: 10px;  }
+            .synergy-content .synergy-postcontent-0 .layout-item-3 { border-right-style:solid;border-right-width:1px;border-right-color:#A6A6A6; color: #EDEDED; background: ; padding-right: 10px;padding-left: 10px;  }
+            .ie7 .synergy-post .synergy-layout-cell {border:none !important; padding:0 !important; }
+            .ie6 .synergy-post .synergy-layout-cell {border:none !important; padding:0 !important; }
+        </style>
+    </head>
+    <body>
+        <div id="synergy-main">
+            <nav class="synergy-nav">
+                <div class="synergy-nav-inner">
+                    <ul class="synergy-hmenu">
+                        <li>
+                            <a href="#" class="active">Inicio</a>
+                        </li>
+                        <li><a href="#">Contacts</a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+            <header class="synergy-header">
+                <div class="synergy-shapes">
+                    <div class="synergy-object1237698167"></div>
+                </div>
+                <h1 class="synergy-headline">
+                    <a href="/">LINE TIME</a>
+                </h1>
+                <h2 class="synergy-slogan">CAN CREATE YOUR SUCCESS</h2>
+            </header>
+            <div class="synergy-sheet clearfix">
+                <div class="synergy-layout-wrapper">
+                    <div class="synergy-content-layout">
+                        <div class="synergy-content-layout-row">
+                            <div class="synergy-layout-cell synergy-content">
+                                <article class="synergy-post synergy-article">
+                                    <div class="synergy-postcontent synergy-postcontent-0 clearfix">
+                                        <div class="synergy-content-layout layout-item-0">
+                                            <div class="synergy-content-layout-row">
+                                                <div class="synergy-layout-cell layout-item-2" style="width: 57%" ng-controller="timelineController" >
+                                                    <div class="col-lg-3 col-md-3 col-sm-5" ng-repeat="dato in datos">
+                                                        <div class="thumbnail">
+                                                            <img ng-src="{{dato.thumbnailUrl}}"alt="">
+                                                            <div class="caption">
+                                                                <h4><a>Elemento {{dato.id}}</a></h4>
+                                                                <p href="{{dato.url}}"> {{dato.title}}</p>
+                                                            </div>
+                                                        </div>	
+                                                    </div>
+                                                </div>
+                                                <div class="synergy-layout-cell layout-item-3" style="width: 28%" >
+                                                    <h1><span style="color: #FFFFFF;">Information</span></h1><h4>
+                                                        <span style="color: #FFFFFF;">Probably The Best Company</span></h4>
+                                                    <p><span style="color: #696969;">
+                                                            <img width="285" height="189" src="resources/common/images/shutterstock_3248515.jpg" alt=""/>
+                                                        </span>
+                                                    </p><p><span style="color: #FFFFFF;">Fermentum quam ut a quisque
+                                                            <span style="color: #FFFFFF;">posuere</span> praesent libero ac. Id nam ut morbi fames varius pharetra consequat faucibus rhoncus
+                                                            sit augue ipsum turpis elit libero sit sit a.</span></p><p style="text-align: center;">
+                                                        <a href="#" class="synergy-button">See All Services</a><br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="synergy-content-layout-br layout-item-1">
+                                        </div>                                            
+                                    </div>
+                                </article>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="synergy-footer">
+                <div class="synergy-footer-inner">
+                    <div class="synergy-content-layout">
+                        <div class="synergy-content-layout-row">
+                            <div class="synergy-layout-cell layout-item-0" style="width: 20%">
+                                <h3>
+                                    <span style="color: #FFFFFF;">Information</span>
+                                </h3>
+                                <br/>
+                                <ul>
+                                    <li>
+                                        <a href="#">Organization</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Schedule</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gente</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Management</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="synergy-layout-cell layout-item-1" style="width: 20%">
+                                <h3><span style="color: #FFFFFF;">Posición</span></h3>
+                                <br/>
+                                <ul><li>
+                                        <a href="#">Area Map</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Address</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="synergy-layout-cell layout-item-1" style="width: 25%">
+                                <h3><span style="color: #FFFFFF;">Company</span></h3><br>
+                                <ul>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="synergy-layout-cell layout-item-2" style="width: 35%">
+                                <p style="text-align: right;">
+                                    <a href="#">
+                                        <img width="32" height="32" alt="" src="resources/timeLineTemplate/images/rss_32.png"></a>
+                                    <a href="#">
+                                        <img width="32" height="32" alt="" src="resources/timeLineTemplate/images/facebook_32.png">
+                                    </a>
+                                    <a href="#">
+                                        <img width="32" height="32" alt="" src="resources/timeLineTemplate/images/twitter_32.png"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="synergy-content-layout">
+                        <div class="synergy-content-layout-row">
+                            <div class="synergy-layout-cell" style="width: 100%">
+                                <p style="text-align: center;">
+                                    <span style="text-align: right; color: #1114C5;">Erat nisl litora arcu turpis aliquam nunc.</span>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="synergy-page-footer">
+                        <span id="synergy-footnote-links">
+                            <a href="#" target="_blank">Web Template</a> created with Style.</span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,2624 @@
+#synergy-main
+{
+   background: #FFFFFF url('images/page.jpeg') top center fixed;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.synergy-hmenu
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.synergy-button
+{
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #FFFFFF;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #CFD2D3 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #CFD2D3 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #CFD2D3 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #CFD2D3 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #CFD2D3 100%) no-repeat;
+   background: linear-gradient(to bottom, #FFFFFF 0, #CFD2D3 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   -webkit-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   border:1px solid #C7C7C7;
+   padding:0 20px;
+   margin:0 auto;
+   height:29px;
+}
+
+.synergy-postcontent,
+.synergy-postheadericons,
+.synergy-postfootericons,
+.synergy-blockcontent,
+ul.synergy-vmenu a 
+{
+   text-align: left;
+}
+
+.synergy-postcontent,
+.synergy-postcontent li,
+.synergy-postcontent table,
+.synergy-postcontent a,
+.synergy-postcontent a:link,
+.synergy-postcontent a:visited,
+.synergy-postcontent a.visited,
+.synergy-postcontent a:hover,
+.synergy-postcontent a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.synergy-postcontent p
+{
+   margin: 10px 0;
+}
+
+.synergy-postcontent h1, .synergy-postcontent h1 a, .synergy-postcontent h1 a:link, .synergy-postcontent h1 a:visited, .synergy-postcontent h1 a:hover,
+.synergy-postcontent h2, .synergy-postcontent h2 a, .synergy-postcontent h2 a:link, .synergy-postcontent h2 a:visited, .synergy-postcontent h2 a:hover,
+.synergy-postcontent h3, .synergy-postcontent h3 a, .synergy-postcontent h3 a:link, .synergy-postcontent h3 a:visited, .synergy-postcontent h3 a:hover,
+.synergy-postcontent h4, .synergy-postcontent h4 a, .synergy-postcontent h4 a:link, .synergy-postcontent h4 a:visited, .synergy-postcontent h4 a:hover,
+.synergy-postcontent h5, .synergy-postcontent h5 a, .synergy-postcontent h5 a:link, .synergy-postcontent h5 a:visited, .synergy-postcontent h5 a:hover,
+.synergy-postcontent h6, .synergy-postcontent h6 a, .synergy-postcontent h6 a:link, .synergy-postcontent h6 a:visited, .synergy-postcontent h6 a:hover,
+.synergy-blockheader .t, .synergy-blockheader .t a, .synergy-blockheader .t a:link, .synergy-blockheader .t a:visited, .synergy-blockheader .t a:hover,
+.synergy-vmenublockheader .t, .synergy-vmenublockheader .t a, .synergy-vmenublockheader .t a:link, .synergy-vmenublockheader .t a:visited, .synergy-vmenublockheader .t a:hover,
+.synergy-headline, .synergy-headline a, .synergy-headline a:link, .synergy-headline a:visited, .synergy-headline a:hover,
+.synergy-slogan, .synergy-slogan a, .synergy-slogan a:link, .synergy-slogan a:visited, .synergy-slogan a:hover,
+.synergy-postheader, .synergy-postheader a, .synergy-postheader a:link, .synergy-postheader a:visited, .synergy-postheader a:hover
+{
+   font-size: 32px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+
+.synergy-postcontent a, .synergy-postcontent a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FCE2B6;
+}
+
+.synergy-postcontent a:visited, .synergy-postcontent a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FCE2B6;
+}
+
+.synergy-postcontent  a:hover, .synergy-postcontent a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #FDEED3;
+}
+
+.synergy-postcontent h1
+{
+   color: #FBB6BA;
+   margin: 0 0 12px;
+   font-size: 24px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-blockcontent h1
+{
+   margin: 0 0 12px;
+   font-size: 24px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postcontent h1 a, .synergy-postcontent h1 a:link, .synergy-postcontent h1 a:hover, .synergy-postcontent h1 a:visited, .synergy-blockcontent h1 a, .synergy-blockcontent h1 a:link, .synergy-blockcontent h1 a:hover, .synergy-blockcontent h1 a:visited 
+{
+   font-size: 24px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postcontent h2
+{
+   color: #FBB6BA;
+   margin: 0 0 20px;
+   font-size: 18px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-blockcontent h2
+{
+   margin: 0 0 20px;
+   font-size: 18px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postcontent h2 a, .synergy-postcontent h2 a:link, .synergy-postcontent h2 a:hover, .synergy-postcontent h2 a:visited, .synergy-blockcontent h2 a, .synergy-blockcontent h2 a:link, .synergy-blockcontent h2 a:hover, .synergy-blockcontent h2 a:visited 
+{
+   font-size: 18px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postcontent h3
+{
+   color: #FBB6BA;
+   margin-left: 0;
+   margin-right: 0;
+   margin-bottom: 20px;
+   font-size: 20px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-blockcontent h3
+{
+   margin-left: 0;
+   margin-right: 0;
+   margin-bottom: 20px;
+   font-size: 20px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-postcontent h3 a, .synergy-postcontent h3 a:link, .synergy-postcontent h3 a:hover, .synergy-postcontent h3 a:visited, .synergy-blockcontent h3 a, .synergy-blockcontent h3 a:link, .synergy-blockcontent h3 a:hover, .synergy-blockcontent h3 a:visited 
+{
+   font-size: 20px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-postcontent h4
+{
+   color: #FFFFFF;
+   margin: 10px 0;
+   font-size: 16px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-blockcontent h4
+{
+   margin: 10px 0;
+   font-size: 16px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postcontent h4 a, .synergy-postcontent h4 a:link, .synergy-postcontent h4 a:hover, .synergy-postcontent h4 a:visited, .synergy-blockcontent h4 a, .synergy-blockcontent h4 a:link, .synergy-blockcontent h4 a:hover, .synergy-blockcontent h4 a:visited 
+{
+   font-size: 16px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postcontent h5
+{
+   color: #FDDDDF;
+   margin: 26px 0;
+   font-size: 11px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-blockcontent h5
+{
+   margin: 26px 0;
+   font-size: 11px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-postcontent h5 a, .synergy-postcontent h5 a:link, .synergy-postcontent h5 a:hover, .synergy-postcontent h5 a:visited, .synergy-blockcontent h5 a, .synergy-blockcontent h5 a:link, .synergy-blockcontent h5 a:hover, .synergy-blockcontent h5 a:visited 
+{
+   font-size: 11px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-postcontent h6
+{
+   color: #FEF5F6;
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-blockcontent h6
+{
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-postcontent h6 a, .synergy-postcontent h6 a:link, .synergy-postcontent h6 a:hover, .synergy-postcontent h6 a:visited, .synergy-blockcontent h6 a, .synergy-blockcontent h6 a:link, .synergy-blockcontent h6 a:hover, .synergy-blockcontent h6 a:visited 
+{
+   font-size: 11px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #synergy-hmenu-bg, .synergy-sheet, .synergy-hmenu a, .synergy-vmenu a, .synergy-slidenavigator > a, .synergy-checkbox:before, .synergy-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #synergy-hmenu-bg, .synergy-sheet, .synergy-slidenavigator > a, .synergy-checkbox:before, .synergy-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+/**
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * https://github.com/necolas/normalize.css
+ */
+
+html {
+   -ms-text-size-adjust: 100%;
+   /* 2 */
+    -webkit-text-size-adjust: 100%;
+/* 2 */}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 700px;
+   color: #2c2828;
+}
+
+.synergy-header:before, 
+#synergy-header-bg:before, 
+.synergy-layout-cell:before, 
+.synergy-layout-wrapper:before, 
+.synergy-footer:before, 
+.synergy-nav:before, 
+#synergy-hmenu-bg:before, 
+.synergy-sheet:before 
+{
+   width: 100%;
+   content: " ";
+   display: table;
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+.synergy-header:after, 
+#synergy-header-bg:after, 
+.synergy-layout-cell:after, 
+.synergy-layout-wrapper:after, 
+.synergy-footer:after, 
+.synergy-nav:after, 
+#synergy-hmenu-bg:after, 
+.synergy-sheet:after,
+.cleared, .clearfix:after 
+{
+   clear: both;
+   font: 0/0 serif;
+   display: block;
+   content: " ";
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .synergy-postcontent li h1, .synergy-blockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .synergy-postcontent li h2, .synergy-blockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .synergy-postcontent li h3, .synergy-blockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .synergy-postcontent li h4, .synergy-blockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .synergy-postcontent li h5, .synergy-blockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .synergy-postcontent li h6, .synergy-blockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .synergy-postcontent li p, .synergy-blockcontent li p 
+{
+   margin:1px;
+}
+
+
+.synergy-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.synergy-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.synergy-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.synergy-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.synergy-object1237698167
+{
+    display: block;
+    left: 4.87%;
+    margin-left: -11px;
+    position: absolute;
+    top: 8px;
+    width: 246px;
+    height: 54px;
+    background-image: url('images/object1237698167.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.default-responsive .synergy-object1237698167
+{
+  display: none;
+}.synergy-headline
+{
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  top: 33px;
+  left: 51.8%;
+  margin-left: -63px !important;
+  line-height: 100%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 101;
+}
+
+.synergy-headline, 
+.synergy-headline a, 
+.synergy-headline a:link, 
+.synergy-headline a:visited, 
+.synergy-headline a:hover
+{
+font-size: 28px;
+font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+font-weight: normal;
+font-style: normal;
+text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #A9E5CC !important;
+  white-space: nowrap;
+}
+.synergy-slogan
+{
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  top: 72px;
+  left: 52.25%;
+  line-height: 100%;
+  margin-left: -121px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 102;
+  white-space: nowrap;
+}
+
+.synergy-slogan, 
+.synergy-slogan a, 
+.synergy-slogan a:link, 
+.synergy-slogan a:visited, 
+.synergy-slogan a:hover
+{
+font-size: 16px;
+font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+font-weight: normal;
+font-style: normal;
+text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF !important;
+}
+
+
+
+
+
+.synergy-footer .layout-item-0 { padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 35px;  }
+.synergy-footer .layout-item-1 { padding: 20px;  }
+.synergy-footer .layout-item-2 { padding-top: 20px;padding-right: 35px;padding-bottom: 20px;padding-left: 20px;  }
+.ie7 .synergy-post .synergy-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .synergy-post .synergy-layout-cell {border:none !important; padding:0 !important; }
+
+.synergy-nav
+{
+   background: #57A5FF url('images/nav.png') scroll;
+   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.38) 0, rgba(0, 102, 219, 0.09) 63%, rgba(0, 24, 51, 0.17) 100%) no-repeat, url('images/nav.png'), -webkit-linear-gradient(top, #C2DEFF 0, #0077FF 63%, #00438F 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.38) 0, rgba(0, 102, 219, 0.09) 63%, rgba(0, 24, 51, 0.17) 100%) no-repeat, url('images/nav.png'), -moz-linear-gradient(top, #C2DEFF 0, #0077FF 63%, #00438F 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.38) 0, rgba(0, 102, 219, 0.09) 63%, rgba(0, 24, 51, 0.17) 100%) no-repeat, url('images/nav.png'), -o-linear-gradient(top, #C2DEFF 0, #0077FF 63%, #00438F 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.38) 0, rgba(0, 102, 219, 0.09) 63%, rgba(0, 24, 51, 0.17) 100%) no-repeat, url('images/nav.png'), -ms-linear-gradient(top, #C2DEFF 0, #0077FF 63%, #00438F 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(255, 255, 255, 0.38) 0, rgba(0, 102, 219, 0.09) 63%, rgba(0, 24, 51, 0.17) 100%) no-repeat, url('images/nav.png'), linear-gradient(top, #C2DEFF 0, #0077FF 63%, #00438F 100%) no-repeat;
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.38) 0, rgba(0, 102, 219, 0.09) 63%, rgba(0, 24, 51, 0.17) 100%) no-repeat, url('images/nav.png'), linear-gradient(to bottom, #C2DEFF 0, #0077FF 63%, #00438F 100%) no-repeat;
+   padding:5px 0;
+   margin:0 auto;
+   position: relative;
+   z-index: 499;
+}
+
+ul.synergy-hmenu a, ul.synergy-hmenu a:link, ul.synergy-hmenu a:visited, ul.synergy-hmenu a:hover 
+{
+   outline: none;
+   position: relative;
+   z-index: 11;
+}
+
+ul.synergy-hmenu, ul.synergy-hmenu ul
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style-type: none;
+}
+
+ul.synergy-hmenu li
+{
+   position: relative;
+   z-index: 5;
+   display: block;
+   float: left;
+   background: none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+ul.synergy-hmenu li:hover
+{
+   z-index: 10000;
+   white-space: normal;
+}
+
+ul.synergy-hmenu:after, ul.synergy-hmenu ul:after
+{
+   content: ".";
+   height: 0;
+   display: block;
+   visibility: hidden;
+   overflow: hidden;
+   clear: both;
+}
+
+ul.synergy-hmenu, ul.synergy-hmenu ul 
+{
+   min-height: 0;
+}
+
+ul.synergy-hmenu 
+{
+   display: inline-block;
+   vertical-align: middle;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.synergy-nav-inner:before 
+{
+   content:' ';
+}
+
+.synergy-nav-inner{
+   text-align: right;
+   margin:0 auto;
+}
+
+.desktop  .synergy-nav-inner{
+   min-width: 700px;
+   max-width: 1728px;
+   width: 90%;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.desktop .synergy-nav
+{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.synergy-hmenu-extra1
+{
+   position: relative;
+   display: block;
+   float: left;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.synergy-hmenu-extra2
+{
+   position: relative;
+   display: block;
+   float: right;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.synergy-hmenu
+{
+   float: right;
+}
+
+.synergy-menuitemcontainer
+{
+   margin:0 auto;
+}
+ul.synergy-hmenu>li {
+   margin-left: 6px;
+}
+ul.synergy-hmenu>li:first-child {
+   margin-left: 3px;
+}
+ul.synergy-hmenu>li:last-child, ul.synergy-hmenu>li.last-child {
+   margin-right: 3px;
+}
+
+ul.synergy-hmenu>li>a
+{
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border:1px solid transparent;
+   padding:0 30px;
+   margin:0 auto;
+   position: relative;
+   display: block;
+   height: 39px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #FFFFFF;
+   line-height: 39px;
+   text-align: center;
+}
+
+.synergy-hmenu>li>a, 
+.synergy-hmenu>li>a:link, 
+.synergy-hmenu>li>a:visited, 
+.synergy-hmenu>li>a.active, 
+.synergy-hmenu>li>a:hover
+{
+   font-size: 18px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-variant: normal;
+   text-align: left;
+}
+
+ul.synergy-hmenu>li>a.active
+{
+   background: #B5B5B5;
+   background: transparent;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border:1px solid transparent;
+   padding:0 30px;
+   margin:0 auto;
+   color: #000000;
+   text-decoration: none;
+}
+
+ul.synergy-hmenu>li>a:visited, 
+ul.synergy-hmenu>li>a:hover, 
+ul.synergy-hmenu>li:hover>a {
+   text-decoration: none;
+}
+
+ul.synergy-hmenu>li>a:hover, .desktop ul.synergy-hmenu>li:hover>a
+{
+   background: #F6AC2C;
+   background: transparent;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border:1px solid transparent;
+   padding:0 30px;
+   margin:0 auto;
+}
+ul.synergy-hmenu>li>a:hover, 
+.desktop ul.synergy-hmenu>li:hover>a {
+   color: #000000;
+   text-decoration: none;
+}
+
+ul.synergy-hmenu>li:before
+{
+   position:absolute;
+   display: block;
+   content:' ';
+   top:0;
+   left:  -6px;
+   width:6px;
+   height: 39px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.synergy-hmenu>li:first-child:before{
+   display:none;
+}
+
+ul.synergy-hmenu li li a
+{
+   background: #DDDFDF;
+   border:1px solid #F53D46;
+   padding:0 22px;
+   margin:0 auto;
+}
+ul.synergy-hmenu li li 
+{
+   float: none;
+   width: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.desktop ul.synergy-hmenu li li ul>li:first-child 
+{
+   margin-top: 0;
+}
+
+ul.synergy-hmenu li li ul>li:last-child 
+{
+   margin-bottom: 0;
+}
+
+.synergy-hmenu ul a
+{
+   display: block;
+   white-space: nowrap;
+   height: 23px;
+   min-width: 7em;
+   border: 1px solid transparent;
+   text-align: left;
+   line-height: 23px;
+   color: #5C0509;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+.synergy-hmenu li li a 
+{
+   border-top-width: 0 !important;
+}
+.synergy-hmenu li li:hover>a 
+{
+   border-top-width: 1px !important;
+}
+.synergy-hmenu ul>li:first-child>a 
+{
+   border-top-width: 1px !important;
+}
+
+.synergy-hmenu ul a:link, 
+.synergy-hmenu ul a:visited, 
+.synergy-hmenu ul a.active, 
+.synergy-hmenu ul a:hover
+{
+   text-align: left;
+   line-height: 23px;
+   color: #5C0509;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+ul.synergy-hmenu ul li a:hover, .desktop ul.synergy-hmenu ul li:hover>a
+{
+   background: #B5B5B5;
+   border:1px solid #F53D46;
+   margin:0 auto;
+}
+.synergy-hmenu ul a:hover
+{
+   color: #583904;
+}
+
+.synergy-hmenu ul li a.synergy-hmenu-before-hovered 
+{
+   border-bottom-width: 0 !important;
+}
+
+.desktop .synergy-hmenu ul li:hover>a
+{
+   color: #583904;
+}
+
+ul.synergy-hmenu ul:before
+{
+   background: #ED0C18;
+   margin:0 auto;
+   display: block;
+   position: absolute;
+   content: ' ';
+   z-index: 1;
+}
+.desktop ul.synergy-hmenu li:hover>ul {
+   visibility: visible;
+   top: 100%;
+}
+.desktop ul.synergy-hmenu li li:hover>ul {
+   top: 0;
+   left: 100%;
+}
+
+ul.synergy-hmenu ul
+{
+   visibility: hidden;
+   position: absolute;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   background-image: url('images/spacer.gif');
+}
+
+.desktop ul.synergy-hmenu>li>ul
+{
+   padding: 10px 30px 30px 30px;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.synergy-hmenu ul ul
+{
+   padding: 30px 30px 30px 10px;
+   margin: -30px 0 0 -10px;
+}
+
+.desktop ul.synergy-hmenu ul.synergy-hmenu-left-to-right 
+{
+   right: auto;
+   left: 0;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.synergy-hmenu ul.synergy-hmenu-right-to-left 
+{
+   left: auto;
+   right: 0;
+   margin: -10px -30px 0 0;
+}
+
+.desktop ul.synergy-hmenu li li:hover>ul.synergy-hmenu-left-to-right {
+   right: auto;
+   left: 100%;
+}
+.desktop ul.synergy-hmenu li li:hover>ul.synergy-hmenu-right-to-left {
+   left: auto;
+   right: 100%;
+}
+
+.desktop ul.synergy-hmenu ul ul.synergy-hmenu-left-to-right
+{
+   right: auto;
+   left: 0;
+   padding: 30px 30px 30px 10px;
+   margin: -30px 0 0 -10px;
+}
+
+.desktop ul.synergy-hmenu ul ul.synergy-hmenu-right-to-left
+{
+   left: auto;
+   right: 0;
+   padding: 30px 10px 30px 30px;
+   margin: -30px -10px 0 0;
+}
+
+.desktop ul.synergy-hmenu li ul>li:first-child {
+   margin-top: 0;
+}
+.desktop ul.synergy-hmenu li ul>li:last-child {
+   margin-bottom: 0;
+}
+
+.desktop ul.synergy-hmenu ul ul:before
+{
+   border-radius: 0;
+   top: 30px;
+   bottom: 30px;
+   right: 30px;
+   left: 10px;
+}
+
+.desktop ul.synergy-hmenu>li>ul:before
+{
+   top: 10px;
+   right: 30px;
+   bottom: 30px;
+   left: 30px;
+}
+
+.desktop ul.synergy-hmenu>li>ul.synergy-hmenu-left-to-right:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.synergy-hmenu>li>ul.synergy-hmenu-right-to-left:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.synergy-hmenu ul ul.synergy-hmenu-left-to-right:before {
+   right: 30px;
+   left: 10px;
+}
+.desktop ul.synergy-hmenu ul ul.synergy-hmenu-right-to-left:before {
+   right: 10px;
+   left: 30px;
+}
+
+.synergy-header
+{
+   margin:0 auto;
+   background-repeat: no-repeat;
+   height: 100px;
+   position:relative;
+   background-image: url('images/header.png');
+   background-position: center top;
+}
+
+.custom-responsive .synergy-header
+{
+   background-image: url('images/header.png');
+   background-position: center top;
+}
+
+.default-responsive .synergy-header,
+.default-responsive #synergy-header-bg
+{
+   background-image: url('images/header.png');
+   background-position: center center;
+   background-size: cover;
+}
+
+.synergy-header-inner{
+   position: relative;
+   min-width: 700px;
+   max-width: 1728px;
+   width: 90%;
+   z-index: auto !important;
+   margin: 0 auto;
+}
+
+.synergy-header>.widget 
+{
+   position:absolute;
+   z-index:101;
+}
+
+.synergy-sheet
+{
+   background: #FFFFFF;
+   background: rgba(255, 255, 255, 0.2);
+   -webkit-border-radius:20px 20px 0 0;
+   -moz-border-radius:20px 20px 0 0;
+   border-radius:20px 20px 0 0;
+   margin:10px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 90%;
+   min-width: 700px;
+   max-width: 1728px;
+   z-index: auto !important;
+}
+
+.synergy-layout-wrapper
+{
+   position: relative;
+   margin: 0 auto 0 auto;
+   z-index: auto !important;
+}
+
+.synergy-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.synergy-content-layout-row 
+{
+   display: table-row;
+}
+
+.synergy-layout-cell
+{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   display: table-cell;
+   vertical-align: top;
+}
+
+/* need only for content layout in post content */ 
+.synergy-postcontent .synergy-content-layout
+{
+   border-collapse: collapse;
+}
+
+.synergy-block
+{
+   margin:10px;
+}
+div.synergy-block img
+{
+   border: none;
+   margin: 0;
+}
+
+.synergy-blockheader
+{
+   padding:6px 5px;
+   margin:0 auto;
+}
+.synergy-blockheader .t,
+.synergy-blockheader .t a,
+.synergy-blockheader .t a:link,
+.synergy-blockheader .t a:visited, 
+.synergy-blockheader .t a:hover
+{
+   color: #000000;
+   font-size: 14px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   margin: 0 10px 0 5px;
+}
+
+.synergy-blockcontent
+{
+   padding:5px;
+   margin:0 auto;
+   color: #FBBBBE;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+.synergy-blockcontent table,
+.synergy-blockcontent li, 
+.synergy-blockcontent a,
+.synergy-blockcontent a:link,
+.synergy-blockcontent a:visited,
+.synergy-blockcontent a:hover
+{
+   color: #FBBBBE;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.synergy-blockcontent p
+{
+   margin: 6px 0;
+}
+
+.synergy-blockcontent a, .synergy-blockcontent a:link
+{
+   color: #D9D9D9;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.synergy-blockcontent a:visited, .synergy-blockcontent a.visited
+{
+   color: #FEF5F6;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.synergy-blockcontent a:hover, .synergy-blockcontent a.hover
+{
+   color: #FDEED3;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.synergy-block ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -12px;
+}
+.opera .synergy-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.synergy-block li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #FCCFD1;
+}
+
+.synergy-block ul>li, .synergy-block ol
+{
+   padding: 0;
+}
+
+.synergy-block ul>li
+{
+   padding-left: 12px;
+}
+
+.synergy-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.synergy-button,
+a.synergy-button:link,
+a:link.synergy-button:link,
+body a.synergy-button:link,
+a.synergy-button:visited,
+body a.synergy-button:visited,
+input.synergy-button,
+button.synergy-button
+{
+   text-decoration: none;
+   font-size: 14px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #000000;
+   margin: 0 5px 0 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 29px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.synergy-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .synergy-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea, a.synergy-search-button span
+{
+   vertical-align: middle;
+   font-size: 14px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-block select 
+{
+   width:96%;
+}
+
+input.synergy-button
+{
+   float: none !important;
+   -webkit-appearance: none;
+}
+
+.synergy-button.active, .synergy-button.active:hover
+{
+   background: #F9C367;
+   background: -webkit-linear-gradient(top, #FAD38E 0, #F7B645 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FAD38E 0, #F7B645 100%) no-repeat;
+   background: -o-linear-gradient(top, #FAD38E 0, #F7B645 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FAD38E 0, #F7B645 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FAD38E 0, #F7B645 100%) no-repeat;
+   background: linear-gradient(to bottom, #FAD38E 0, #F7B645 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   -webkit-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   border:1px solid #F6AC2C;
+   padding:0 20px;
+   margin:0 auto;
+}
+.synergy-button.active, .synergy-button.active:hover {
+   color: #000000 !important;
+}
+
+.synergy-button.hover, .synergy-button:hover
+{
+   background: #FCE0B1;
+   background: -webkit-linear-gradient(top, #FEF2DD 0, #FAD189 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FEF2DD 0, #FAD189 100%) no-repeat;
+   background: -o-linear-gradient(top, #FEF2DD 0, #FAD189 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FEF2DD 0, #FAD189 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FEF2DD 0, #FAD189 100%) no-repeat;
+   background: linear-gradient(to bottom, #FEF2DD 0, #FAD189 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   -webkit-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.15);
+   border:1px solid #F9C367;
+   padding:0 20px;
+   margin:0 auto;
+}
+.synergy-button.hover, .synergy-button:hover {
+   color: #000000 !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="range"], input[type="tel"], input[type="time"], input[type="week"], textarea
+{
+   background: #F9FAFB;
+   border:1px solid rgba(246, 172, 44, 0.2);
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="range"], input[type="tel"], input[type="time"], input[type="week"], textarea
+{
+   width: 60%;
+   padding: 8px 0;
+   color: #151412 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-shadow: none;
+   padding-left: 10px;
+}
+input.synergy-error, textarea.synergy-error
+{
+   background: #F9FAFB;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.synergy-error, textarea.synergy-error {
+   color: #151412 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.synergy-search input[type="text"]
+{
+   background: #F9FAFB;
+   border-radius: 0;
+   border:1px solid #CCD6E0;
+   margin:0 auto;
+   width: 100%;
+   padding: 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #151412 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.synergy-search 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.synergy-search input, a.synergy-search-button
+{
+   -webkit-appearance: none;
+   top:0;
+   right:0;
+}
+
+form.synergy-search>input, a.synergy-search-button{
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+
+form.synergy-search input[type="submit"], input.synergy-search-button, a.synergy-search-button
+{
+   background: #F76E75;
+   border-radius: 0;
+   margin:0 auto;
+}
+form.synergy-search input[type="submit"], input.synergy-search-button, a.synergy-search-button {
+   position:absolute;
+   left:auto;
+   display:block;
+   border: 0;
+   top: 1px;
+   bottom: 1px;
+   right: 	1px;
+   padding:0 6px;
+   color: #8D070E !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   cursor: pointer;
+}
+
+a.synergy-search-button span.synergy-search-button-text, a.synergy-search-button:after {
+   vertical-align:middle;
+}
+
+a.synergy-search-button:after {
+   display:inline-block;
+   content:' ';
+   height: 100%;
+}
+
+a.synergy-search-button, a.synergy-search-button span,
+a.synergy-search-button:visited, a.synergy-search-button.visited,
+a.synergy-search-button:hover, a.synergy-search-button.hover 
+{
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+a.synergy-search-button 
+{
+   line-height: 100% !important;
+}
+
+label.synergy-checkbox:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.synergy-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+   color: #FCE4BA !important;
+}
+
+.synergy-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.synergy-checkbox.active:before
+{
+   background: #C7C7C7;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.synergy-checkbox.hovered:before
+{
+   background: #E0E0E0;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.synergy-radiobutton:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.synergy-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+   color: #FCE4BA !important;
+}
+
+.synergy-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.synergy-radiobutton.active:before
+{
+   background: #C7C7C7;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.synergy-radiobutton.hovered:before
+{
+   background: #E0E0E0;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+.synergy-comments
+{
+   border-top:1px dotted #B5B5B5;
+   margin:0 auto;
+   margin-top: 25px;
+}
+
+.synergy-comments h2
+{
+   color: #D1D1D1;
+}
+
+.synergy-comment-inner
+{
+   background: #E2E8EE;
+   background: transparent;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   padding:5px;
+   margin:0 auto;
+   margin-left: 94px;
+}
+.synergy-comment-avatar 
+{
+   float:left;
+   width:80px;
+   height:80px;
+   padding:1px;
+   background:#fff;
+   border:1px solid #E2E8EE;
+}
+
+.synergy-comment-avatar>img
+{
+   margin:0 !important;
+   border:none !important;
+}
+
+.synergy-comment-content
+{
+   padding:10px 0;
+   color: #FBBBBE;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.synergy-comment
+{
+   margin-top: 6px;
+}
+
+.synergy-comment:first-child
+{
+   margin-top: 0;
+}
+
+.synergy-comment-header
+{
+   color: #D1D1D1;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.synergy-comment-header a, 
+.synergy-comment-header a:link, 
+.synergy-comment-header a:visited,
+.synergy-comment-header a.visited,
+.synergy-comment-header a:hover,
+.synergy-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.synergy-comment-header a, .synergy-comment-header a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FFFFFF;
+}
+
+.synergy-comment-header a:visited, .synergy-comment-header a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FFFFFF;
+}
+
+.synergy-comment-header a:hover,  .synergy-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FFFFFF;
+}
+
+.synergy-comment-content a, 
+.synergy-comment-content a:link, 
+.synergy-comment-content a:visited,
+.synergy-comment-content a.visited,
+.synergy-comment-content a:hover,
+.synergy-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.synergy-comment-content a, .synergy-comment-content a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FEF2DD;
+}
+
+.synergy-comment-content a:visited, .synergy-comment-content a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FCCFD1;
+}
+
+.synergy-comment-content a:hover,  .synergy-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FEF2DD;
+}
+
+.synergy-pager
+{
+   background: #EFF2F5;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: linear-gradient(to bottom, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   border:1px solid #B5B5B5;
+   padding:5px;
+}
+
+.synergy-pager>*:last-child
+{
+   margin-right:0 !important;
+}
+
+.synergy-pager>span {
+   cursor:default;
+}
+
+.synergy-pager>*
+{
+   background: #E0E0E0;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: linear-gradient(to bottom, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   border:1px solid #E0E0E0;
+   padding:7px;
+   margin:0 4px 0 auto;
+   line-height: normal;
+   position:relative;
+   display:inline-block;
+   margin-left: 0;
+}
+
+.synergy-pager a:link,
+.synergy-pager a:visited,
+.synergy-pager .active
+{
+   line-height: normal;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #212121
+;
+}
+
+.synergy-pager .active
+{
+   background: #B6BFC9;
+   background: -webkit-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -moz-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -o-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -ms-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   -svg-background: linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: linear-gradient(to bottom, #E5E8EB 0, #8796A6 100%) no-repeat;
+   border:1px solid #E0E0E0;
+   padding:7px;
+   margin:0 4px 0 auto;
+   color: #FFFFFF
+;
+}
+
+.synergy-pager .more
+{
+   background: #E0E0E0;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: linear-gradient(to bottom, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   border:1px solid #E0E0E0;
+   margin:0 4px 0 auto;
+}
+.synergy-pager a.more:link,
+.synergy-pager a.more:visited
+{
+   color: #402903
+;
+}
+.synergy-pager a:hover
+{
+   background: #C7C7C7;
+   background: -webkit-linear-gradient(top, #F0F0F0 0, #9E9E9E 100%) no-repeat;
+   background: -moz-linear-gradient(top, #F0F0F0 0, #9E9E9E 100%) no-repeat;
+   background: -o-linear-gradient(top, #F0F0F0 0, #9E9E9E 100%) no-repeat;
+   background: -ms-linear-gradient(top, #F0F0F0 0, #9E9E9E 100%) no-repeat;
+   -svg-background: linear-gradient(top, #F0F0F0 0, #9E9E9E 100%) no-repeat;
+   background: linear-gradient(to bottom, #F0F0F0 0, #9E9E9E 100%) no-repeat;
+   border:1px solid #E0E0E0;
+   padding:7px;
+   margin:0 4px 0 auto;
+}
+.synergy-pager  a:hover,
+.synergy-pager  a.more:hover
+{
+   color: #292929
+;
+}
+.synergy-pager>*:after
+{
+   margin:0 0 0 auto;
+   display:inline-block;
+   position:absolute;
+   content: ' ';
+   top:0;
+   width:0;
+   height:100%;
+   right: 0;
+   text-decoration:none;
+}
+
+.synergy-pager>*:last-child:after{
+   display:none;
+}
+
+.synergy-commentsform
+{
+   background: #E2E8EE;
+   background: transparent;
+   padding:10px;
+   margin:0 auto;
+   margin-top:25px;
+   color: #D1D1D1;
+}
+
+.synergy-commentsform h2{
+   padding-bottom:10px;
+   margin: 0;
+   color: #D1D1D1;
+}
+
+.synergy-commentsform label {
+   display: inline-block;
+   line-height: 25px;
+}
+
+.synergy-commentsform input:not([type=submit]), .synergy-commentsform textarea {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width:100%;
+   max-width:100%;
+}
+
+.synergy-commentsform .form-submit
+{
+   margin-top: 10px;
+}
+.synergy-post
+{
+   padding:15px;
+}
+a img
+{
+   border: 0;
+}
+
+.synergy-article img, img.synergy-article, .synergy-block img, .synergy-footer img
+{
+   margin: 0 0 0 0;
+}
+
+.synergy-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.synergy-article table, table.synergy-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.synergy-post .synergy-content-layout-br
+{
+   height: 0;
+}
+
+.synergy-article th, .synergy-article td
+{
+   padding: 2px;
+   vertical-align: top;
+   text-align: left;
+}
+
+.synergy-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 0 0 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.synergy-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.synergy-postheader
+{
+   color: #FFFFFF;
+   margin: 0 0 5px;
+   font-size: 24px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postheader a, 
+.synergy-postheader a:link, 
+.synergy-postheader a:visited,
+.synergy-postheader a.visited,
+.synergy-postheader a:hover,
+.synergy-postheader a.hovered
+{
+   font-size: 24px;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.synergy-postheader a, .synergy-postheader a:link
+{
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #FCE2B6;
+}
+
+.synergy-postheader a:visited, .synergy-postheader a.visited
+{
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #FDD3D5;
+}
+
+.synergy-postheader a:hover,  .synergy-postheader a.hovered
+{
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #362302;
+}
+
+.synergy-postheadericons,
+.synergy-postheadericons a,
+.synergy-postheadericons a:link,
+.synergy-postheadericons a:visited,
+.synergy-postheadericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FCCFD1;
+}
+
+.synergy-postheadericons
+{
+   padding: 1px;
+}
+
+.synergy-postheadericons a, .synergy-postheadericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FBD99D;
+}
+
+.synergy-postheadericons a:visited, .synergy-postheadericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: none;
+   color: #CCCCCC;
+}
+
+.synergy-postheadericons a:hover, .synergy-postheadericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: underline;
+   color: #0F0F0F;
+}
+
+.synergy-postpdficon:before
+{
+   content:url('images/postpdficon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .synergy-postpdficon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.synergy-postprinticon:before
+{
+   content:url('images/postprinticon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .synergy-postprinticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.synergy-postemailicon:before
+{
+   content:url('images/postemailicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .synergy-postemailicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.synergy-postcontent ul>li:before,  .synergy-post ul>li:before,  .synergy-textblock ul>li:before
+{
+   content:url('images/postbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .synergy-postcontent ul>li:before, .opera   .synergy-post ul>li:before, .opera   .synergy-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.synergy-postcontent li, .synergy-post li, .synergy-textblock li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #080808;
+   margin: 12px 0 12px 6px;
+}
+
+.synergy-postcontent ul>li, .synergy-post ul>li, .synergy-textblock ul>li, .synergy-postcontent ol, .synergy-post ol, .synergy-textblock ol
+{
+   padding: 0;
+}
+
+.synergy-postcontent ul>li, .synergy-post ul>li, .synergy-textblock ul>li
+{
+   padding-left: 11px;
+}
+
+.synergy-postcontent ul>li:before,  .synergy-post ul>li:before,  .synergy-textblock ul>li:before
+{
+   margin-left: -11px;
+}
+
+.synergy-postcontent ol, .synergy-post ol, .synergy-textblock ol, .synergy-postcontent ul, .synergy-post ul, .synergy-textblock ul
+{
+   margin: 1em 0 1em 6px;
+}
+
+.synergy-postcontent li ol, .synergy-post li ol, .synergy-textblock li ol, .synergy-postcontent li ul, .synergy-post li ul, .synergy-textblock li ul
+{
+   margin: 0.5em 0 0.5em 6px;
+}
+
+.synergy-postcontent li, .synergy-post li, .synergy-textblock li
+{
+   margin: 12px 0 12px 0;
+}
+
+.synergy-postcontent ol>li, .synergy-post ol>li, .synergy-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.synergy-postcontent ul>li, .synergy-post ul>li, .synergy-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #FBB1B5 url('images/postquote.png') no-repeat scroll;
+   padding:10px 10px 10px 47px;
+   margin:10px 10px 10px 50px;
+   color: #570509;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .synergy-postcontent blockquote a, .synergy-blockcontent blockquote a, .synergy-footer blockquote a,
+blockquote a:link, .synergy-postcontent blockquote a:link, .synergy-blockcontent blockquote a:link, .synergy-footer blockquote a:link,
+blockquote a:visited, .synergy-postcontent blockquote a:visited, .synergy-blockcontent blockquote a:visited, .synergy-footer blockquote a:visited,
+blockquote a:hover, .synergy-postcontent blockquote a:hover, .synergy-blockcontent blockquote a:hover, .synergy-footer blockquote a:hover
+{
+   color: #570509;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.synergy-postcontent blockquote p,
+.synergy-blockcontent blockquote p,
+.synergy-footer blockquote p
+{
+   margin: 0;
+   margin: 2px 0 2px 15px;
+}
+
+.synergy-postfootericons,
+.synergy-postfootericons a,
+.synergy-postfootericons a:link,
+.synergy-postfootericons a:visited,
+.synergy-postfootericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FCCFD1;
+}
+
+.synergy-postfootericons
+{
+   padding: 1px;
+}
+
+.synergy-postfootericons a, .synergy-postfootericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FBD99D;
+}
+
+.synergy-postfootericons a:visited, .synergy-postfootericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #CCCCCC;
+}
+
+.synergy-postfootericons a:hover, .synergy-postfootericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #0F0F0F;
+}
+
+.synergy-footer
+{
+   background: #C1D7FB url('images/footer.png') scroll;
+   background: -webkit-linear-gradient(top, rgba(150, 188, 248, 0.13) 0, rgba(236, 243, 254, 0.32) 90%, rgba(193, 215, 251, 0.1) 90%, rgba(193, 215, 251, 0.1) 100%) no-repeat, url('images/footer.png'), -webkit-linear-gradient(top, #A4C5F9 0, #DEEAFD 90%, #C1D7FB 90%, #C1D7FB 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(150, 188, 248, 0.13) 0, rgba(236, 243, 254, 0.32) 90%, rgba(193, 215, 251, 0.1) 90%, rgba(193, 215, 251, 0.1) 100%) no-repeat, url('images/footer.png'), -moz-linear-gradient(top, #A4C5F9 0, #DEEAFD 90%, #C1D7FB 90%, #C1D7FB 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(150, 188, 248, 0.13) 0, rgba(236, 243, 254, 0.32) 90%, rgba(193, 215, 251, 0.1) 90%, rgba(193, 215, 251, 0.1) 100%) no-repeat, url('images/footer.png'), -o-linear-gradient(top, #A4C5F9 0, #DEEAFD 90%, #C1D7FB 90%, #C1D7FB 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(150, 188, 248, 0.13) 0, rgba(236, 243, 254, 0.32) 90%, rgba(193, 215, 251, 0.1) 90%, rgba(193, 215, 251, 0.1) 100%) no-repeat, url('images/footer.png'), -ms-linear-gradient(top, #A4C5F9 0, #DEEAFD 90%, #C1D7FB 90%, #C1D7FB 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(150, 188, 248, 0.13) 0, rgba(236, 243, 254, 0.32) 90%, rgba(193, 215, 251, 0.1) 90%, rgba(193, 215, 251, 0.1) 100%) no-repeat, url('images/footer.png'), linear-gradient(top, #A4C5F9 0, #DEEAFD 90%, #C1D7FB 90%, #C1D7FB 100%) no-repeat;
+   background: linear-gradient(to bottom, rgba(150, 188, 248, 0.13) 0, rgba(236, 243, 254, 0.32) 90%, rgba(193, 215, 251, 0.1) 90%, rgba(193, 215, 251, 0.1) 100%) no-repeat, url('images/footer.png'), linear-gradient(to bottom, #A4C5F9 0, #DEEAFD 90%, #C1D7FB 90%, #C1D7FB 100%) no-repeat;
+   margin:0 auto;
+   position: relative;
+   color: #CB0B14;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-align: left;
+   padding: 0;
+}
+
+.synergy-footer a,
+.synergy-footer a:link,
+.synergy-footer a:visited,
+.synergy-footer a:hover,
+.synergy-footer td, 
+.synergy-footer th,
+.synergy-footer caption
+{
+   color: #CB0B14;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.synergy-footer p 
+{
+   margin: 15px 0;
+   padding:0;
+   text-align: left;
+}
+
+.synergy-footer a,
+.synergy-footer a:link
+{
+   color: #452C03;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.synergy-footer a:visited
+{
+   color: #452C03;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.synergy-footer a:hover
+{
+   color: #A66C07;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.synergy-footer h1
+{
+   color: #A6A6A6;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-footer h2
+{
+   color: #B5B5B5;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-footer h3
+{
+   color: #F6AC2C;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-footer h4
+{
+   color: #F76E75;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-footer h5
+{
+   color: #F76E75;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-footer h6
+{
+   color: #F76E75;
+   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+}
+
+.synergy-footer img
+{
+   border: none;
+   margin: 5px;
+}
+
+.synergy-footer-inner
+{
+   margin: 0 auto;
+   min-width: 700px;
+   max-width: 1728px;
+   width:90%;
+   padding:20px;
+   padding-right: 20px;
+   padding-left: 20px;
+}
+
+.synergy-rss-tag-icon
+{
+   background:  url('images/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-rss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-facebook-tag-icon
+{
+   background:  url('images/footerfacebookicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-facebook-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-twitter-tag-icon
+{
+   background:  url('images/footertwittericon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-twitter-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-tumblr-tag-icon
+{
+   background:  url('images/tumblricon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-tumblr-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-pinterest-tag-icon
+{
+   background:  url('images/pinteresticon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-pinterest-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-vimeo-tag-icon
+{
+   background:  url('images/vimeoicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:33px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-vimeo-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-youtube-tag-icon
+{
+   background:  url('images/youtubeicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-youtube-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-linkedin-tag-icon
+{
+   background:  url('images/linkedinicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+   vertical-align: middle;
+}
+
+.synergy-linkedin-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.synergy-footer li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #7F5305;
+}
+
+.synergy-page-footer, 
+.synergy-page-footer a,
+.synergy-page-footer a:link,
+.synergy-page-footer a:visited,
+.synergy-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #2C1D02;
+}
+
+.synergy-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #7D7D7D;
+}
+
+.synergy-lightbox-wrapper 
+{
+   background: #333;
+   background: rgba(0, 0, 0, .8);
+   bottom: 0;
+   left: 0;
+   padding: 0 100px;
+   position: fixed;
+   right: 0;
+   text-align: center;
+   top: 0;
+   z-index: 1000000;
+}
+
+.synergy-lightbox,
+.synergy-lightbox-wrapper .synergy-lightbox-image
+{
+   cursor: pointer;
+}
+
+.synergy-lightbox-wrapper .synergy-lightbox-image
+{
+   border: 6px solid #fff;
+   border-radius: 3px;
+   display: none;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.synergy-lightbox-wrapper .synergy-lightbox-image.active
+{
+   display: inline-block;
+}
+
+.synergy-lightbox-wrapper .lightbox-error
+{
+   background: #fff;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 80px;
+   opacity: .95;
+   padding: 20px;
+   position: fixed;
+   width: 300px;
+   z-index: 100;
+}
+
+.synergy-lightbox-wrapper .loading
+{
+   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 32px;
+   opacity: .5;
+   padding: 10px;
+   position: fixed;
+   width: 32px;
+   z-index: 10100;
+}
+
+.synergy-lightbox-wrapper .arrow
+{
+   cursor: pointer;
+   height: 100px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   width: 82px;
+   z-index: 10003;
+}
+
+.synergy-lightbox-wrapper .arrow.left
+{
+   left: 9px;
+}
+
+.synergy-lightbox-wrapper .arrow.right
+{
+   right: 9px;
+}
+
+.synergy-lightbox-wrapper .arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.synergy-lightbox-wrapper .arrow.disabled 
+{
+   display: none;
+}
+
+.synergy-lightbox-wrapper .arrow-t, 
+.synergy-lightbox-wrapper .arrow-b
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   left: 26px;
+   position: relative;
+   width: 30px;
+}
+
+.synergy-lightbox-wrapper .arrow-t
+{
+   top: 38px;
+}
+
+.synergy-lightbox-wrapper .arrow-b
+{
+   top: 50px;
+}
+
+.synergy-lightbox-wrapper .close
+{
+   cursor: pointer;
+   height: 22px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   right: 39px;
+   top: 30px;
+   width: 22px;
+   z-index: 10003;
+}
+
+.synergy-lightbox-wrapper .close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.synergy-lightbox-wrapper .close .cw, 
+.synergy-lightbox-wrapper .close .ccw
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   position: absolute;
+   left: -4px;
+   top: 8px;
+   width: 30px;
+}
+
+.synergy-lightbox-wrapper .cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.synergy-lightbox-wrapper .ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.synergy-lightbox-wrapper .close-alt, 
+.synergy-lightbox-wrapper .arrow-right-alt, 
+.synergy-lightbox-wrapper .arrow-left-alt 
+{
+   color: #fff;
+   display: none;
+   font-size: 2.5em;
+   line-height: 100%;
+}
+
+.ie8 .synergy-lightbox-wrapper .close-alt, 
+.ie8 .synergy-lightbox-wrapper .arrow-right-alt, 
+.ie8 .synergy-lightbox-wrapper .arrow-left-alt 
+{
+   display: block;
+}
+
+.ie8 .synergy-lightbox-wrapper .cw, 
+.ie8 .synergy-lightbox-wrapper .ccw 
+{
+   display: none;
+}
+
+.synergy-content-layout .synergy-content
+{
+   margin:0 auto;
+}
+
+/* Begin Additional CSS Styles */
+.synergy-blockheader .t, .synergy-vmenublockheader .t {white-space: nowrap;}
+
+.synergy-headline,.synergy-slogan {text-shadow: 1px 1px 2px #FFFFFF;}
+/* End Additional CSS Styles */
+
+.synergy-footer-inner {
+ margin-top: 5px;   
+}

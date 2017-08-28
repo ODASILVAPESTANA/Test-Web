@@ -3,10 +3,10 @@ var app = angular.module('SynergyApp',['ngRoute','ui.bootstrap']);
 app.config(function($routeProvider){
   $routeProvider
   .when('/',{
-    templateUrl:'../src/view/login.html'
+    templateUrl:'view/templates/loginTemplate/login.html'
   })
   .when('/timeline', {
-    templateUrl: '../src/view/timeline.html'
+    templateUrl: 'view/templates/timeLineTemplate/template/inicio.html'
   })
   .otherwise({ 
       redirectTo: '/' 

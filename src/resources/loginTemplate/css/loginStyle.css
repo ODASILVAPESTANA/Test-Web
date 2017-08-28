@@ -1,0 +1,124 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.wrapper {
+    position: absolute;
+    margin-top: 15%;
+    margin-bottom: 40%;
+}
+
+.form-signin {
+    position: fixed;
+    padding: 5% 5% 5%;
+    margin: 0 auto;
+    margin-top: -155px;
+    background-color:rgba(255, 255, 255, 0.9); //semi-transparent white
+    border: 1px solid rgba(0,0,0,0.1);
+    width:490px;
+    heigth:10%:
+        float:left;
+    padding-bottom: 30px !important;
+    margin-top: -100px !important;
+}
+
+#drop {
+    position: relative;
+    left: 40%;
+    width: 60%;
+    margin-bottom: 2%;
+}
+
+input{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 2%;
+}
+
+input[type="password"] {
+    margin-bottom: 1%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+h2 {
+    font-size: 1.7em;
+    align: left;
+    margin-bottom: 5%;
+}
+
+a{
+    font-style: italic;
+}
+
+
+.caption {
+    height: 130px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 200%;
+}
+
+.thumbnail {
+    padding: 5px;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+.btn-tipo-usuario {
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    color: #a5a0a0 !important;
+    background-color: #f0f5f9 !important;
+    border-color: #9fbddb !important;
+    font-size: 13px !important;
+}
+.btn-tipo-usuario-span {
+    width: 7% !important;
+    background-color: #9fbddb !important;
+}
+.h3, h3 {
+    margin-top: 20px !important;
+    padding-bottom: 30px !important;
+    margin-left: 10px !important;
+    color: black !important;
+}
+label {
+    margin-top: -30px !important;
+    float: right !important;
+    font-weight: 100 !important;
+}
+.btn-group-lg>.btn, .btn-lg {
+    font-size: 12px !important;
+    width: 35%;
+}
+fieldset{
+    padding-right: 90px !important;
+}
+
+input[type="text"],
+input[type="password"], 
+input[type="email"], input[type="url"],
+input[type="color"], input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"], 
+input[type="number"], 
+input[type="range"], 
+input[type="tel"],
+input[type="time"], 
+input[type="week"], textarea {
+    border: 1px solid rgba(69, 169, 216, 0.2) !important;
+}
+.btn-Aceptar{
+     margin-top: 55px; 
+    
+}
