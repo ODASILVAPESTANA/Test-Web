@@ -2,51 +2,80 @@
 
 angular.module('webTest')
 
-    .controller('LoginController', ['$scope', '$http', '$rootScope', '$state', '$uibModal', function ($scope, $http, $rootScope, $state, $uibModal) {
+    .controller('LoginController', ['$scope', '$http', '$cookies', '$state', '$uibModal', function ($scope, $http, $cookies, $state, $uibModal) {
         $scope.loginForm = {};
+        $scope.login = {};
+
+        $scope.showAlerta = function(){
+
+        }
+        
         $scope.doLogin = function () {
-            if (angular.isUndefined($scope.loginForm.usuario)) {
-                console.log('what');
+            if (!angular.isDefined($scope.login.usuario)||($scope.login.usuario==='')) {
                 $uibModal.open({
-                    template:'<p>Introduzca un usuario</p>'
+                    template:`
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Error</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>El campo de Usuario no puede estar vacío.</p>
+                    </div>`
                 });
             }
-            else if (angular.isUndefined($scope.loginForm.password)) {
-                //activate modal
+            else if (angular.isUndefined($scope.login.password)||($scope.login.password==='')) {
+                 $uibModal.open({
+                    template:`
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Error</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>El campo de Contraseña no puede estar vacío.</p>
+                    </div>`
+                });
             }
-            else if (angular.isUndefined($scope.loginForm.tipo)) {
+            else if ($scope.login.tipo=='') {
 
-                //activate modal
+                 $uibModal.open({
+                    template:`
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Error</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Debe seleccionar un tipo de Usuario.</p>
+                    </div>`
+                });
             }
 
             else {
-                // var datos =  {"username": $scope.loginForm.usuario,
-                //     "password": $scope.loginForm.password,
-                //     "type": $scope.loginForm.tipo};
-                // var datosJSON = JSON.stringify(datos);
                 $http({
-
                     method: 'POST',
                     url: 'https://prueba-admision-web.herokuapp.com/session',
                     data: {
-                        "username": "synergy",
-                        "password": "synergy123",
-                        "type": "V"
+                        "username": $scope.login.usuario,
+                        "password": $scope.login.password,
+                        "type": $scope.login.tipo
                     }
-
-
-
-                }).then(function exito(response) {
+                }).then(function (response) {
                     if (response.status == 200) {
-                        //Almacenamos el cookie id
-                        $rootScope.cid = response.data.cid;
-                        $state.go('app.timelime');
+                        $cookies.put('session',response.data.cid);
+                        $state.go('timeline');
                     }
-                }, function error(response) {
+                }, function (response) {
                     console.log(response.statusText);
                     if (response.status == 400) {
-                        console.log("Error En Credenciales");
-                        console.log(response.data.status);
+                        $uibModal.open({
+                            template:`
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Error</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>No se encuentra registrado.</p>
+                            </div>`
+                        });
                     }
 
                 });
@@ -57,10 +86,12 @@ angular.module('webTest')
     ])
 
 
-    .controller('TimelineController', ['$scope', '$rootscope', '$http', function ($scope, $rootScope, $http) {
+    .controller('TimelineController', ['$scope', '$cookies', '$http', function ($scope, $cookies, $http) {
+
+        var cid = $cookies.get('session');
         $http({
             method: "GET",
-            url: 'https://prueba-admision-web.herokuapp.com/data?cid=' + $rootScope.cid,
+            url: 'https://prueba-admision-web.herokuapp.com/data?cid=' + cid,
         }).then(function exito(response) {
             $scope.resultados = response.data;
         }, function error(response) {

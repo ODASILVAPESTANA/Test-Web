@@ -2,30 +2,21 @@
   <div class="row login">
     <form class="form" name="loginForm" ng-submit="doLogin()">
       <h2>Inicio de Sesión</h2>
-      <div class="dropdown">
-        <select class="form-control" name="tipo" ng-model="login.tipo">
-            <option selected>Seleccione...</option>
-            <option value="V">V</option>
-            <option value="E">E</optioni>
-            <option value="P">P</option>
-          </select>
-      </div>
+      <select class="form-control dropdown-select" name="tipo" ng-model="login.tipo" ng-init="login.tipo=''">
+          <option value="" ng-selected="true">Seleccione...</option>
+          <option value="V">V</option>
+          <option value="E">E</option>
+          <option value="P">P</option>
+      </select>
       <input type="text" ng-model="login.usuario" name="usuario" class="form-control" placeholder="Usuario">
       <input type="password" ng-model="login.password" name="password" class="form-control" placeholder="Contraseña">
-      <a href="">¿Olvidó su contraseña?</a>
-      <button type="submit" class="btn btn-primary">Aceptar</button>
+      <a ng-click="alerta=true"><i>¿Olvidó su contraseña?</i></a><br>
+      <div id="alerta" ng-show="alerta" class="alert alert-warning alert-dismissable">
+        <a href="#" class="close" ng-click="alerta=false" aria-label="close">&times;</a> Recuperar Contraseña.
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-lg btn-primary">Aceptar</button>
+      </div>
     </form>
   </div>
 </div>
-
-<script>
-  $(document).ready(function () {
-    $('.dropdown').each(function (key, dropdown) {
-      var $dropdown = $(dropdown);
-      $dropdown.find('.dropdown-menu a').on('click', function () {
-        $dropdown.find('button').text($(this).text()).append(' <span class="caret"></span>');
-      });
-    });
-  });
-
-</script>

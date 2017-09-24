@@ -1,19 +1,61 @@
 body{
-    background-image: url('./../images/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    background: url('./../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size:"cover";
+    -moz-background-size:"cover";
+    -o-background-size:"cover";
+    background-size:"cover";
+    background-position:center;
 }
 
 div.login {
-    position:absolute;
+    position: fixed;
     background: rgba(255,255,255,0.6);
     padding:20px;
     filter: alpha(opacity=60); 
     display:block;
     width: 500px;
     height: 400px;
-    top: 50%;
-    left:15%;
-    margin-top: -120px;
+    top: 25%;
+    left:5%;
+}
+
+.form-control {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #337ab7;
+    background: #FFFFFF;
+    color: #7B7B7B;
+    }
+
+.dropdown-select{
+    display: inline-block;
+    width:50%;
+    float: right;
+
+}
+
+div.timeline{
+    position: static;
+    background: rgba(255,255,255,0.6);
+    padding:30px;
+    filter: alpha(opacity=60); 
+    display:block;
+    
+}
+
+div.timeline-body{
+    background-color: #ffffff;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height:100%
+}
+
+.submit-button{
+
 }
