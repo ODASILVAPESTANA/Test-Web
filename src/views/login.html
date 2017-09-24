@@ -1,0 +1,31 @@
+<div class="container-fluid" ng-controller="LoginController">
+  <div class="row login">
+    <form class="form" name="loginForm" ng-submit="doLogin()">
+      <h2>Inicio de Sesión</h2>
+      <div class="dropdown">
+        <select class="form-control" name="tipo" ng-model="login.tipo">
+            <option selected>Seleccione...</option>
+            <option value="V">V</option>
+            <option value="E">E</optioni>
+            <option value="P">P</option>
+          </select>
+      </div>
+      <input type="text" ng-model="login.usuario" name="usuario" class="form-control" placeholder="Usuario" required>
+      <input type="password" ng-model="login.password" name="password" class="form-control" placeholder="Contraseña">
+      <a href="">¿Olvidó su contraseña?</a>
+      <button type="submit" class="btn btn-primary">Aceptar</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown').each(function (key, dropdown) {
+      var $dropdown = $(dropdown);
+      $dropdown.find('.dropdown-menu a').on('click', function () {
+        $dropdown.find('button').text($(this).text()).append(' <span class="caret"></span>');
+      });
+    });
+  });
+
+</script>

@@ -1,0 +1,30 @@
+<div class="container-fluid" ng-controller="TimelineController">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h2>
+				Timeline
+			</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9 col-md-offset-1">
+			<div class="row">
+				<li class="media" ng-repeat="resultado in resultados">
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<img alt="Thumbnail" ng-src={{resultado.thumbnailUrl}} />
+							<div class="caption">
+								<h3>
+									{{resultado.title}}
+								</h3>
+								<p>
+									<a class="btn btn-primary" href="{{resultado.url}}">Ir</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</div>
+		</div>
+	</div>
+</div>
