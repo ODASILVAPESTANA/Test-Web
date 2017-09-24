@@ -2,12 +2,23 @@
   <div class="row login">
     <form class="form" name="loginForm" ng-submit="doLogin()">
       <h2>Inicio de Sesión</h2>
-      <select class="form-control dropdown-select" name="tipo" ng-model="login.tipo" ng-init="login.tipo=''">
-          <option value="" ng-selected="true">Seleccione...</option>
-          <option value="V">V</option>
-          <option value="E">E</option>
-          <option value="P">P</option>
-      </select>
+      <div class="tipo">
+        <div class="btn-group" role="group">
+          <button class="btn btn-default select-text" type="button">
+              <span id="selected">Seleccione...</span>
+          </button>
+          <button type="button" class="btn btn-primary select-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only"></span>
+          </button>
+          <ul class="dropdown-menu" name="tipo" ng-model="login.tipo">
+            <li><a ng-click="login.tipo='V'">V</a></li>
+            <li><a ng-click="login.tipo='E'">E</a></li>
+            <li><a ng-click="login.tipo='P'">P</a></li>
+          </ul>
+        </div>
+      </div>
       <input type="text" ng-model="login.usuario" name="usuario" class="form-control" placeholder="Usuario">
       <input type="password" ng-model="login.password" name="password" class="form-control" placeholder="Contraseña">
       <a ng-click="alerta=true"><i>¿Olvidó su contraseña?</i></a><br>
@@ -20,3 +31,11 @@
     </form>
   </div>
 </div>
+
+<script>
+
+  $('.dropdown-menu a').click(function(){
+    $('#selected').text($(this).text());
+  });
+
+</script>

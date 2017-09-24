@@ -85,7 +85,6 @@ angular.module('webTest')
 
     ])
 
-
     .controller('TimelineController', ['$scope', '$cookies', '$http', function ($scope, $cookies, $http) {
 
         var cid = $cookies.get('session');
