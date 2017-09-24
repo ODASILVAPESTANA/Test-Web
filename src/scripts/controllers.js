@@ -35,7 +35,7 @@ angular.module('webTest')
                     </div>`
                 });
             }
-            else if ($scope.login.tipo=='') {
+            else if (angular.isUndefined($scope.login.tipo)) {
 
                  $uibModal.open({
                     template:`
