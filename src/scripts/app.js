@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('webTest', ['ui.router', 'ngResource'])
+angular.module('webTest', ['ui.router','ui.bootstrap','ngResource'])
 
 .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider

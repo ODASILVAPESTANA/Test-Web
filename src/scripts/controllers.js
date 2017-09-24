@@ -1,14 +1,15 @@
 'use strict';
 
-
-
 angular.module('webTest')
 
-    .controller('LoginController', ['$scope', '$http', '$rootScope', '$state', function ($scope, $http, $rootScope, $state) {
+    .controller('LoginController', ['$scope', '$http', '$rootScope', '$state', '$uibModal', function ($scope, $http, $rootScope, $state, $uibModal) {
         $scope.loginForm = {};
         $scope.doLogin = function () {
             if (angular.isUndefined($scope.loginForm.usuario)) {
-
+                console.log('what');
+                $uibModal.open({
+                    template:'<p>Introduzca un usuario</p>'
+                });
             }
             else if (angular.isUndefined($scope.loginForm.password)) {
                 //activate modal
@@ -24,7 +25,7 @@ angular.module('webTest')
                 //     "type": $scope.loginForm.tipo};
                 // var datosJSON = JSON.stringify(datos);
                 $http({
-                    
+
                     method: 'POST',
                     url: 'https://prueba-admision-web.herokuapp.com/session',
                     data: {
@@ -32,9 +33,9 @@ angular.module('webTest')
                         "password": "synergy123",
                         "type": "V"
                     }
-              
-                   
-                    
+
+
+
                 }).then(function exito(response) {
                     if (response.status == 200) {
                         //Almacenamos el cookie id
@@ -59,11 +60,11 @@ angular.module('webTest')
     .controller('TimelineController', ['$scope', '$rootscope', '$http', function ($scope, $rootScope, $http) {
         $http({
             method: "GET",
-            url: 'https://prueba-admision-web.herokuapp.com/data?cid='+ $rootScope.cid,
-        }). then (function exito(response){
+            url: 'https://prueba-admision-web.herokuapp.com/data?cid=' + $rootScope.cid,
+        }).then(function exito(response) {
             $scope.resultados = response.data;
-        }, function error(response){
-            if (response.status == 500){
+        }, function error(response) {
+            if (response.status == 500) {
                 alert('Error de autentificacion');
             }
         })
