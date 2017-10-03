@@ -1,0 +1,1 @@
+var angularTest = angular.module('angularTest', []);

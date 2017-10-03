@@ -1,0 +1,17 @@
+{
+  "name": "angular test",
+  "authors": [
+    "Pascual Madrid.com <pascualm4@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

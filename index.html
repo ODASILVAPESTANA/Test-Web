@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="angularTest">
+  <head>
+    <script src="//localhost:35729/livereload.js"></script>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+  </head>
+  <body>
+ 
+    <div class="container1"  ng-controller="controller">
+	   
+	   
+	  <form action="/action_page.php">
+	 
+	  <h3 class= "title">Inicio de Sesión</h3>
+
+	  <div class="dropdown" ng-model="tipo">
+	    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Seleccione..
+	    <span class="caret"></span></button>
+	    <ul class="dropdown-menu">
+	      <li><a href="#">V</a></li>
+	      <li><a href="#">E</a></li>
+	      <li><a href="#">P</a></li>
+	      
+	    </ul>
+	  </div>
+	    <div class="form-group">
+	      <label for="login.email"></label>
+	      <input type="text" class="form-control" id="email" placeholder="Usuario" name="email" ng-model="usuario">
+	    </div>
+	    <div class="form-group">
+	      <label for="pwd"></label>
+	      <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pwd" ng-model="pwd">
+	    </div>
+	    <a onclick="MyFuntion()" id="forgot" class= "forget" href="#">¿Olvidó su contraseña?</a><br>
+	    
+	    <button type="button" id ="btnvalidar" class="btn btn-primary"  ng-click="SendData()">Aceptar</button>
+	    
+	  </form>
+	  <hr />
+
+	  {{data}}
+	  
+
+	</div>
+
+
+  <script src="src/validacion.js"></script>
+
+  <script type="text/javascript">
+  	function MyFuntion() {
+  		alert("recuperar contraseña");
+  	}
+  </script>
+
+  		
+        <script type="text/javascript" src="assets/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/controller.js"></script>
+
+  </body>
+</html>
+
+
+

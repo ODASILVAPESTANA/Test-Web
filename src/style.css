@@ -1,0 +1,77 @@
+body{
+  background: url("../assets/images/background2.png") no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:  100% 120%; 
+}
+
+.container1{
+	margin-top: 180px;
+	background-color: white;
+	opacity: 0.8;
+	margin-right: 60%;
+
+}
+
+.container{
+	margin-top: 150px;
+	background-color: white;
+	opacity: 0.8;
+	margin-bottom: 12%;
+
+}
+
+
+h2{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.title{
+	margin-left: 30px;
+	margin-top: 20px;
+}
+ .dropdown-toggle{
+ 	margin-left: 75%;
+	border-radius: 0.5px;
+	border-color: #00cccc;
+	
+
+}
+
+.dropdown-menu{
+	margin-left: 410px;
+}
+
+.form-group{
+	margin-right: 20px;
+	margin-left: 20px;
+
+}
+
+#email{
+	margin-top: 10px;
+	border-radius: 0.5px;
+	border-color: #00cccc;
+
+}
+
+#pwd{
+	border-radius: 0.5px;
+	border-color: #00cccc;
+}
+
+.forget{
+	margin-left: 18px;
+	font-style: oblique;
+	color: #0088cc;
+	
+}
+
+.btn-primary{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	margin-left: 40%;
+	margin-right: 50%;
+}
