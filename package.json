@@ -19,6 +19,12 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "angular": "^1.6.6",
+    "angular-resource": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.0.0",
+    "popper.js": "^1.11.0"    
   }
 }

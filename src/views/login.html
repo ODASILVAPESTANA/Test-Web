@@ -1,0 +1,87 @@
+<div class="wrapper" ng-controller="LoginController">
+  <div class="container wrapped">
+    <form name="loginForm" ng-submit="login()" novalidate>
+      <div class="form-group row">          
+        <div class="col">
+          <h4>Inicio de Sesión</h4>
+        </div>
+      </div>  
+
+      <div class="form-group row">
+        <div class="col">
+          <div class="btn-group btn-group-lg float-right" role="group">
+            <button type="button" class="btn btn-light btn-drop border-info" data-toggle="dropdown">{{user.type}}</button>
+            <button type="button" class="btn btn-primary btn-caret dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" ng-click="user.type='V'">V</a>
+              <a class="dropdown-item" ng-click="user.type='E'">E</a>
+              <a class="dropdown-item" ng-click="user.type='P'">P</a>          
+            </div>
+          </div>
+        </div>          
+      </div>
+
+      <div class="form-group row">
+        <div class="col">
+          <input type="text" class="form-control form-control-lg border-info" id="username" name="username" placeholder="Usuario" ng-model="user.username" ng-class="{'has-error': loginForm.username.$error.required && !loginForm.username.$pristine }" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col">
+          <input type="password" class="form-control form-control-lg border-info" id="password" name="password" placeholder="Contraseña" ng-model="user.password" ng-class="{'has-error': loginForm.password.$error.required && !loginForm.password.$pristine }" required>
+        </div>  
+      </div>      
+
+      <div class="form-group row">        
+        <div class="col">
+          <a class="link-lg" ng-click="recoverPass(true)" href="">¿Olvidó su contraseña?</a>
+        </div>  
+      </div>
+
+      <div ng-if="recover" class="alert alert-info alert-dismissible fade show" role="alert">
+        <button ng-click="recoverPass(false)" type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>¡Recuperar Contraseña!</strong>
+      </div>
+
+      <div ng-if="loginError" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button ng-click="recoverPass(false)" type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>¡Error! Credenciales Incorrectas.</strong>
+      </div>      
+
+      <div class="form-group row">        
+        <div class="col text-center">
+          <button type="submit" class="btn btn-primary btn-xl mt-4">Aceptar</button>
+        </div>  
+      </div>  
+    </form>
+  </div>        
+
+  <!-- Modal Trigger -->    
+  <a href="" data-toggle="modal" data-target="#err-modal" id="modalTrigger"></a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="err-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Oops!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Debes ingresar el campo "{{missing}}".</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>            
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

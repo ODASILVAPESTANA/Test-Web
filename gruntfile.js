@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           base: {
             path: '.',
             options: {
-              index: 'src/index.html'
+              index: 'index.html'
             }
           }
         }
@@ -22,10 +22,10 @@ module.exports = function(grunt) {
         livereload: true
       },
       files: [
-        'src/*.js',
-        'src/**/*.js',
-        'src/*.html',
-        'src/**/*.html',
+        'src/scripts/*.js',
+        'src/styles/*.css',
+        'src/views/*.html',
+        'index.html',        
         'gruntfile.js'
       ]
     }

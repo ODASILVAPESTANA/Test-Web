@@ -1,0 +1,50 @@
+.wrapper {  	
+  	display: flex;    	
+	height: 100vh;	
+	background-image: url(../../assets/images/background.jpg);
+    background-size: cover;    
+}
+
+.wrapped {
+	max-width: 500px;
+	padding: 15px 20px 5px 20px;
+	background: rgba(235,239,242,0.75);	
+	margin-left: 0px;
+	align-self: center;
+}
+
+h4 {
+	color: #404040;
+}
+
+.btn-light {
+	color: #B0B0B0;		
+}
+
+input, select, .btn-drop {
+	border-radius: 0px !important;	
+	padding-right: 2rem !important;
+}
+
+.btn-caret {	
+	border-top-right-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+	font-size: 2.25rem !important;
+	line-height: 0px !important;
+}
+
+.btn-xl {
+    padding: 10px 30px;
+    font-size: 20px;    
+	border-radius: 10px;
+}
+
+.link-lg {
+	font-size: 1.3rem; 
+	font-style: italic;
+}	
+
+.has-error {
+	border: 1px solid red !important;
+}
+
