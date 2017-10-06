@@ -1,8 +1,9 @@
 .wrapper {  	
   	display: flex;    	
 	height: 100vh;	
-	background-image: url(../../assets/images/background.jpg);
-    background-size: cover;    
+	background-image: url(../../assets/images/background-faded.jpg);
+    background-size: cover;            
+    background-position: center center;
 }
 
 .wrapped {
@@ -48,3 +49,12 @@ input, select, .btn-drop {
 	border: 1px solid red !important;
 }
 
+.logo {
+	background-image: url(../../assets/images/logo.png);	
+    width: 460px;
+    height: 78px;
+    margin: 15px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}​
