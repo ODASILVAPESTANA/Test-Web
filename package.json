@@ -15,6 +15,10 @@
   "bugs": {
     "url": "https://github.com/SYNERGY-GB/Test-Web/issues"
   },
+  "dependencies": {
+    "angular": "^1.6.8",
+    "bootstrap": "^4.0.0"
+  },
   "homepage": "https://github.com/SYNERGY-GB/Test-Web#readme",
   "devDependencies": {
     "grunt": "^1.0.1",

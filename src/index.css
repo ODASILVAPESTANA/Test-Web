@@ -1,0 +1,83 @@
+html,body{
+    margin:0;
+    height:100%;
+}
+
+img{
+  display:block;
+  width:100%; height:100%;
+  object-fit: cover;
+}
+
+fieldset{
+	border-color: transparent;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.synergy {
+    position: relative;
+    text-align: right;
+    bottom: 15%;
+    color: 0090b0;
+    font-size: 65px;
+    margin-right: 9%;
+    font-weight:bold;
+}
+
+.login {
+    position: absolute;
+    bottom: 30%;
+    left: 16px;
+    background: rgba(250, 250, 250, 0.55);
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.botonaceptar {
+	background-color: #3399FF;
+	color: white;
+	margin-top: 15px;
+	border-radius: 8px;
+	border-color: #3399FF;
+	padding: 7px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.form-control1 {
+	border-color: #3399FF;
+	margin-top: 10px;
+	padding-right: 40%;
+
+}
+
+.titulo {
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.recuperar {
+	margin-top: 10px;
+	color:#0090b0;
+	font-style: italic;
+	text-align: left;
+}
+
+.dropdown {
+	text-align: right;
+}
+
+#dropdownMenuLink {
+	color: grey;
+	background-color: white;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-color: #3399FF;
+}
