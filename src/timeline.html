@@ -1,0 +1,18 @@
+<div id="contenedor" class="container" style="height:100%" >
+		<div id="timeline" class="timeline">
+				<br />
+		<div id="titulo" class="page-header" align="center"> <h1>TIMELINE</h1><img src="/assets/images/lupa.jpg" width="50px;" height="50px;">  </div>
+				<hr />
+		<div id="informacion" align="center" ng-repeat="info in datos"  >
+			<div class="row" style="background-color:#D4ECF6; width:90%;">
+  				<div class="col-sm-4"><a href="{{info.url}}" target="_blank"><img src="{{info.thumbnailUrl}}" alt="Ver" title="Ver" ></a></div>
+  				<div class="col-sm-2" style="vertical-align:middle; height:150px ;"><b>N&uacute;mero : </b>{{info.id}}  </div>
+  				<div class="col-sm-4"><b>T&iacute;tulo :</b> {{info.title}}</div>
+			 </div> 
+				<br /> 
+		</div>
+		<div id="boton" align="center">
+			 <button  class="btn btn-primary btn-lg" onclick="history.back()"">Regresar</button>		</div>
+			<br />
+		</div>
+	</div><br />

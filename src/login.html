@@ -1,0 +1,39 @@
+<div id="contenedor" class="contenedor">
+	<div  class="formulario"> 
+		<br>
+		<fieldset  class="form-group" > 
+			<legend class="field"> Inicio de Sesi&oacute;n </legend>
+			<hr>
+				<div >
+				  <form   novalidate >
+				
+				  <div class="form-group " align="right" style="padding-right:5%"  >
+					 <select class="form-control form-control" name="type" id="type" style="width:30%;" ng-model="user.type" autofocus required>
+								<option value="" > Seleccione...</option>
+								<option value="V">V</option>
+								<option value="E">E</option>
+								<option value="P">P</option>
+					 </select>
+				  </div>
+		           <br>
+					<div id="usuario" style="padding-left:5%">
+					<input type="text"  class="form-control form-control"  name="username" id="username" ng-model="user.username" placeholder="Usuario" style="width:95%" required>
+					</div>
+					<br>
+					<div id="password" style="padding-left:5%">
+					<input type="password" class="form-control form-control" name="password" id="password" ng-model="user.password" placeholder="Contrase&ntilde;a" style="width:95%" required>
+					</div>
+					<br>
+					<div id="Ocontraseña" style="padding-left:5%">
+						<a href="#" onclick="alert('Recuperar contrase\361a')">&iquest;Olvid&oacute; Contrase&ntilde;a?</a>				
+					</div>
+					<br>
+		<div id="benviar" class="text-center" >
+	 <button  class="btn btn-primary btn-lg" ng-click="login()">Ingresar</button>		
+		</div>
+					<br>				
+				  </form>
+				</div>
+		</fieldset>
+	</div>
+</div>

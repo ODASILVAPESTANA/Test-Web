@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Test-Web">
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+	<title>Prueba Ricardo Altafullas</title>
+	<script src="//localhost:35729/livereload.js"></script>    
+        <link rel="stylesheet" type="text/css" href="src/css/Style.css">
+        <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
+        <script src="src/js/angular.min.js"></script>
+	<script src="src/js/app.js"></script>
+	<script src="src/js/popper.min.js"></script>
+	<script src="src/js/jquery-1.11.0.js"></script>
+        <script src="src/js/bootstrap.min.js"></script>
+        <script src="src/js/bootstrap.js"></script>
+  	<script src="src/js/angular-route.js"></script>
+  	<script src="src/js/angular-resource.js"></script>
+  	<script src="src/js/ui-bootstrap.js"></script>
+  	<script src="src/js/ui-bootstrap-tpls.js"></script>
+  </head>
+  <body >
+	<div ng-view></div>
+
+	<div class="footer" > SYNERGY-GB </div>
+  </body>
+</html>
