@@ -1,9 +1,47 @@
-<html>
+<html ng-app>
   <head>
+    <title>SynergyDB Login | Prueba de Admisión | Gerald Leonel Alarcón</title>
+
+    <!-- Meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset-UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+
+    <!-- Grunt -->
     <script src="//localhost:35729/livereload.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">    
+  
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/style.css">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
   </head>
   <body>
-    <h1> Grunt is running! </h1>
-    <h2> :) </h2>
+    <div class="synergy-container d-flex j-center">
+        <div class="row my-auto mx-0 p-0 w-100">
+          <div class="col-12 col-sm-6 bg-opacity p-3 m-0">
+            <p class="title-1">Inicio de sesión</p>
+              <div class="d-flex m-0"> 
+                <select class="ml-auto mb-2">
+                  <option selected>Seleccione..</option>
+                  <option>V</option>
+                  <option>E</option>
+                </select> 
+              </div>
+              <input type="text" placeholder="Usuario" required class="mb-2 w-100"/>
+              <input type="text" placeholder="Contraseña" required class="mb-2 w-100"/>
+              <a href="#"><i>¿Olvidó su contraseña?</i></a>
+              <div class="d-flex w-100">
+                <button class="btn btn-primary m-auto">Aceptar</button>
+              </div> 
+            </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
