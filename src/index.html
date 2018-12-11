@@ -1,4 +1,5 @@
-<html ng-app>
+<!DOCTYPE html>
+<html ng-app="app">
   <head>
     <title>SynergyGB Login | Prueba de Admisión | Gerald Leonel Alarcón</title>
 
@@ -6,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset-UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Grunt -->
     <script src="//localhost:35729/livereload.js"></script>
@@ -17,40 +18,38 @@
   
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/stylesheets/style.css">
+    
 
     <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+    <script src="../assets/js/script.js"></script>
+
   </head>
-  <body>
-    <div class="synergy-container d-flex j-center">
-      <div class="row my-auto mx-0 p-0 w-100">  
-          <div class="col-12 col-sm-6 col-md-5 col-lg-5 col-xl-4 bg-opacity py-3 px-4 m-0">
-            <p class="title-1 pl-3">Inicio de Sesión</p>
-            <form class="w-100" autocomplete="off">
-              <div class="d-flex m-0">    
-                  <select class="ml-auto mb-3 col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5 form-control select-synergy" required >
-                    <option class="fs-15" selected value="">Seleccione..</option>
-                    <option class="fs-15" value="V">V</option>  
-                    <option class="fs-15" value="E">E</option>
-                    <option class="fs-15" value="P">P</option>   
-                  </select>    
-                </div> 
-                <input type="text" placeholder="Usuario" required class="form-control mb-3 w-100"/>
-                <input type="password" placeholder="Contraseña" required class="mb-2 form-control w-100"/>
-                <a onclick="alertOne()" href="#"><i class="pl-1 fs-15">¿Olvidó su contraseña?</i></a>
-                <div class="d-flex w-100 mt-4">  
-                  <button class="btn btn-primary-2 m-auto py-2 px-4 fs-15">Aceptar</button>
-                </div>   
-              </div>   
-            </form> 
-        </div>
-        <img src="../assets/images/logo.png" class="synergy-logo" style="position:absolute;bottom:0;" />
-      </div>  
-    </div>
+  <body ng-controller="mainCtrl">
+      <header>
+          <nav class="navbar navbar-default">
+          <div class="container">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="/">Angular Routing Example</a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                  <li><a href="/about"><i class="fa fa-shield"></i> About</a></li>
+                  <li><a href="/contact"><i class="fa fa-comment"></i> Contact</a></li>
+              </ul>
+          </div>
+          </nav>
+      </header>   
+    <div id="main">  
+      <div ng-view></div>
+    </div>  
   </body>
   <script type="text/javascript">
     function alertOne(){
       alert("Recuperar Contraseña");
     }
   </script>
-</html>
+</html> 
+ 
