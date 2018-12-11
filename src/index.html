@@ -1,6 +1,6 @@
 <html ng-app>
   <head>
-    <title>SynergyDB Login | Prueba de Admisión | Gerald Leonel Alarcón</title>
+    <title>SynergyGB Login | Prueba de Admisión | Gerald Leonel Alarcón</title>
 
     <!-- Meta tags-->
     <meta charset="UTF-8">
@@ -23,25 +23,34 @@
   </head>
   <body>
     <div class="synergy-container d-flex j-center">
-        <div class="row my-auto mx-0 p-0 w-100">
-          <div class="col-12 col-sm-6 bg-opacity p-3 m-0">
-            <p class="title-1">Inicio de sesión</p>
-              <div class="d-flex m-0"> 
-                <select class="ml-auto mb-2">
-                  <option selected>Seleccione..</option>
-                  <option>V</option>
-                  <option>E</option>
-                </select> 
-              </div>
-              <input type="text" placeholder="Usuario" required class="mb-2 w-100"/>
-              <input type="text" placeholder="Contraseña" required class="mb-2 w-100"/>
-              <a href="#"><i>¿Olvidó su contraseña?</i></a>
-              <div class="d-flex w-100">
-                <button class="btn btn-primary m-auto">Aceptar</button>
-              </div> 
-            </div>
+      <div class="row my-auto mx-0 p-0 w-100">  
+          <div class="col-12 col-sm-6 col-md-5 col-lg-5 col-xl-4 bg-opacity py-3 px-4 m-0">
+            <p class="title-1 pl-3">Inicio de Sesión</p>
+            <form class="w-100" autocomplete="off">
+              <div class="d-flex m-0">    
+                  <select class="ml-auto mb-3 col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5 form-control select-synergy" required >
+                    <option class="fs-15" selected value="">Seleccione..</option>
+                    <option class="fs-15" value="V">V</option>  
+                    <option class="fs-15" value="E">E</option>
+                    <option class="fs-15" value="P">P</option>   
+                  </select>    
+                </div> 
+                <input type="text" placeholder="Usuario" required class="form-control mb-3 w-100"/>
+                <input type="password" placeholder="Contraseña" required class="mb-2 form-control w-100"/>
+                <a onclick="alertOne()" href="#"><i class="pl-1 fs-15">¿Olvidó su contraseña?</i></a>
+                <div class="d-flex w-100 mt-4">  
+                  <button class="btn btn-primary-2 m-auto py-2 px-4 fs-15">Aceptar</button>
+                </div>   
+              </div>   
+            </form> 
         </div>
-      </div>
+        <img src="../assets/images/logo.png" class="synergy-logo" style="position:absolute;bottom:0;" />
+      </div>  
     </div>
   </body>
+  <script type="text/javascript">
+    function alertOne(){
+      alert("Recuperar Contraseña");
+    }
+  </script>
 </html>
