@@ -1,0 +1,14 @@
+<div class="container fill">
+    <h3>TimeLine</h3>
+    <div class="row">
+        <div ng-repeat="element in data" class="col-lg-5 col-md-6 col-sm-6 col-xs-12" align="center">
+            <img class="image" ng-src="{{element.thumbnailUrl}}"></img>
+            <a id="textA" ng-href="{{element.url}}">{{element.id}}</a>
+            <div class="middle"> 
+                <div class="text"> 
+                    {{element.title}} 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

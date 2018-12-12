@@ -1,9 +1,81 @@
-<html>
-  <head>
-    <script src="//localhost:35729/livereload.js"></script>
-  </head>
-  <body>
-    <h1> Grunt is running! </h1>
-    <h2> :) </h2>
-  </body>
+<!doctype html>
+<html ng-app="synergyTestApp" >
+    <head>
+        <meta charset="utf-8">
+        <title>AngularJS SYNERGY</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        
+        <!-- Angular JS -->
+        <script src="../js/angular.js"></script>
+        <script src="../js/angular-ui-router.min.js"></script>
+        
+        <!-- JQuery -->
+        <script src="../js/jquery.min.js"></script>
+
+        <!-- Bootstrap Js-->
+        <script src="../js/bootstrap.min.js"></script>
+
+        <!-- Mis Scripts -->
+        <script src="src/app.js"></script>
+        <script src="controllers/loginController.js"></script>
+        <script src="controllers/timelineController.js"></script>
+        <style>
+            .fondo-login {
+                background-image: url("assets/images/background.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                -webkit-background-size: auto;   /* Safari 3.0 */
+                -moz-background-size: auto;	/* Gecko 1.9.2 (Firefox 3.6) */
+                -o-background-size: auto;		/* Opera 9.5 */
+                background-size: auto;		    /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+            } 
+
+            .otro {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+            }
+            .bgc {
+                background-color:rgba(255, 255, 255, 0.8);
+                /* border: 1px solid rgba(0,0,0,0.1); */
+            }
+            .row {
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+
+            #tipodoc {
+                position: relative;
+                left: 40%;
+                width: 60%;
+                margin-bottom: 2%;
+            }
+
+            a{
+                font-style: italic;
+            }
+
+            .vcenter {
+                display: inline-block;
+                vertical-align: middle;
+                float: none;
+            }
+
+            .fill {
+              min-height: 100vh;
+            }
+            .container {
+                padding-right: 0px;
+                padding-left: 0px;
+                position: relative;
+                /* border: 1px solid; */
+            }
+
+        </style>
+    </head>
+    <body>
+        <div ui-view></div>
+    </body>
 </html>
