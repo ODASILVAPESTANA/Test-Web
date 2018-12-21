@@ -1,21 +1,23 @@
 <div class="synergy-container d-flex j-center">
     <div class="row my-auto mx-0 p-0 w-100">  
-        <div class="col-12 col-sm-6 col-md-5 col-lg-5 col-xl-4 bg-opacity py-3 px-4 m-0">
+        <div ng-app="loginSynergy2" class="col-12 col-sm-6 col-md-5 col-lg-5 col-xl-4 bg-opacity py-3 px-4 m-0">
           <p class="title-1 pl-3">Inicio de Sesión</p>
-          <form class="w-100">
-            <div class="d-flex m-0">    
-                <select class="ml-auto mb-3 col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5 form-control select-synergy">
+          <form ng-controller="appLogin" ng-submit="submit(userForm.$valid)" class="w-100">
+            <div class="d-flex m-0">  
+                {{user}}   {{type}} {{password}}
+                <select ng-model="type" class="ml-auto mb-3 col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5 form-control select-synergy">
                   <option class="fs-15" selected value="">Seleccione..</option>
                   <option class="fs-15" value="V">V</option>  
                   <option class="fs-15" value="E">E</option>
                   <option class="fs-15" value="P">P</option>   
-                </select>    
+                </select>      
               </div>  
-              <input type="text" placeholder="Usuario" required class="form-control mb-3 w-100"/>
-              <input autocomplete="off" type="password" placeholder="Contraseña" required class="mb-2 form-control w-100"/>
+              {{events}}
+              <input type="text" ng-model="user" name="user" placeholder="Usuario" required class="form-control mb-3 w-100"/>
+              <input autocomplete="off" type="password" ng-model="password" name="password" placeholder="Contraseña" required class="mb-2 form-control w-100"/>
               <a onclick="alertOne()" href="#"><i class="pl-1 fs-15">¿Olvidó su contraseña?</i></a>
               <div class="d-flex w-100 mt-4">  
-                <a href="/timeline" class="m-auto"><button type="button" class="btn btn-primary-2 m-auto py-2 px-4 fs-15">Aceptar</button></a>
+               <!-- <a href="/timeline" class="m-auto"> --><button type="submit" class="btn btn-primary-2 m-auto py-2 px-4 fs-15">Aceptar</button> <!-- </a> -->
               </div>    
             </div>   
           </form> 
