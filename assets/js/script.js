@@ -7,15 +7,15 @@
 
     routerSynergy.config(function($routeProvider, $locationProvider) {
         $routeProvider
-
+  
             .when('/', {
                 templateUrl : 'src/views/login.html',
                 controller  : 'mainCtrl'
             })
-
+ 
             .when('/timeline', {
                 templateUrl : 'src/views/timeline.html',
-                controller  : 'aboutCtrl' 
+                controller  : 'timelineCtrl' 
             })
 
             $locationProvider.html5Mode(true);
@@ -29,7 +29,7 @@
         $scope.message = 'Panel usado como timeline';
     });
 
-// Definición de models
+// Codigo POST del LOGIN
 
     routerSynergy.controller('appLogin', function($http, $scope, $location, $rootScope) {
         $scope.user = "";
@@ -47,16 +47,14 @@
         }
     });
 
-    // timeline Controller
-    routerSynergy.controller('timelineController', function($scope, $http, $rootScope) {
-    $scope.data = "";
-    $http({
-    method: 'get',
-    url: ' https://prueba-admision-web.herokuapp.com/data?cid=' +$rootScope.cid
-    }).then(function successCallback(response) {
-    $scope.data = response.data;
-    }, function errorCallback(response) {
-    });
-    });
+// Codigo GET del TIMELINE
 
+    routerSynergy.controller('timelineCtrl', function($scope, $http, $rootScope) {
+        $scope.data = "";
+        $http({method: 'get', url: ' https://prueba-admision-web.herokuapp.com/data?cid=' +$rootScope.cid})
+        .then(function successCallback(response) {
+            $scope.data = response.data; 
+        }, function errorCallback(response) {
+        });
+    });
 

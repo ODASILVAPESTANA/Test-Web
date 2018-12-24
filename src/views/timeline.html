@@ -1,31 +1,59 @@
-<div class="timeline-container d-flex j-center">
-    <div class="bg-opacity w-100 h-100vh">
-        <nav class="navbar navbar-light bg-light">
-            <div class="row w-100 m-0 p-0">
-                <div class="col-12 col-sm-4 col-md-3">
-                    <img src="../../assets/images/logo.png" class="ml-2 w-100"/>
+<nav class="navbar navbar-light bg-light">
+    <div class="row w-100 m-0 p-0">
+        <div class="col-12 col-sm-4 col-md-3">
+            <img src="../../assets/images/logo.png" class="ml-2 w-100"/>
+        </div>
+        <div class="col-12 col-sm-5 col-md-6 d-flex j-center">
+            <p class="fs-15 text-center m-0 p-0">Bienvenido, usuario {{cid}}</p>
+        </div>
+        <div class="col-12 col-sm-3 col-md-3 d-flex j-center">
+            <a href="/" class="w-100"><button class="btn btn-primary w-100 fs-15">SALIR</button></a>
+        </div>
+    </div>  
+</nav>
+<div class="timeline-container parallax d-flex j-center">
+    <div class="bg-opacity w-100 h-100vh d-flex j-center">
+        <div class="w-100">
+            <div class="m-0 p-0 w-100">
+                <p class="text-center raleway w-100 fs-60vw">¡Gracias por elegirnos!<br>Somos lo que te mereces</p>
+            </div> 
+            <div class="row m-0 p-0">
+                <div class="col-12 col-sm-6 col-lg-4 m-auto">
+                    <button class="btn w-100 raleway btn-timeline">Actualiza tus datos</button>
                 </div>
-                <div class="col-12 col-sm-5 col-md-6 d-flex j-center">
-                    <p class="fs-15 text-center m-0 p-0">Bienvenida,</p>
+                <div class="col-12 col-sm-6 col-lg-4 m-auto">
+                    <button class="btn w-100 raleway btn-timeline">Envianos un comentario</button>
                 </div>
-                <div class="col-12 col-sm-3 col-md-3 d-flex j-center">
-                    <a href="/" class="w-100"><button class="btn btn-primary w-100 fs-15">SALIR</button></a>
+                <div class="col-12 col-sm-12 col-lg-4 m-auto">
+                    <button class="btn w-100 raleway btn-timeline">Descubre nuestro timeline</button>
                 </div>
-            </div>  
-        </nav>
-        <div class="m-0 p-0 w-100 d-flex j-center h-70vh">
-            <p class="text-center raleway w-100 fs-60vw">¡Gracias por elegirnos!<br>Somos lo que te mereces</p>
-        </div> 
-        <div class="row m-0 p-0">
-            <div class="col-12 col-sm-3">
-                <button class="btn w-100 raleway btn-timeline">Actualiza tus datos</button>
-            </div>
-            <div class="col-12 col-sm-4">
-                <button class="btn w-100 raleway btn-timeline">Envianos un comentario</button>
-            </div>
-            <div class="col-12 col-sm-5">
-                <button class="btn w-100 raleway btn-timeline">Accede a nuestra galeria de imágenes</button>
             </div>
         </div>
     </div>
 </div>
+<div class="w-100 pt-3 px-3">
+    <p class="handlee fs-20 text-left">We've the next timeline for you:</p>
+</div>
+<div class="w-100 pt-3 pb-3">
+    <div ng-repeat="timeline in data">
+        <div class="row m-0 pr-3 pl-3">
+            <div class="col-2 border-r-2">
+                <img ng-src="{{timeline.thumbnailUrl}}" alt="" class="w-100 h-100">
+            </div>
+            <div class="col-10 d-flex j-center">
+                <div class="w-100">
+                    <p class="raleway fs-15 mb-0">Image Step N° {{timeline.id}}</p>
+                    <p class="handlee fs-15 text-justify mb-0">{{timeline.title}}</p>
+                    <p class="raleway fs-15">Find this image <a ng-href="{{timeline.url}}" style="text-decoration:none;" class="raleway fs-15">doing click here</a></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="footer-container parallax d-flex j-center">
+    <div class="bg-opacity w-100 p-4">
+        <p class="raleway fs-15 mb-0">Made by Gerald Alarcón</p>
+        <p class="handlee fs-15 mb-0">Contact Information: <i class="raleway fs-15">+58 412 1717805</i></p>
+    </div>
+</div>
+    

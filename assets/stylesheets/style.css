@@ -8,18 +8,23 @@
 html{
     font-size:10pt;
 }
-.fs-15{
-    font-size:1.5rem;
-}
 .form-control{
     font-size:1.5rem;
     height:calc(3rem + 2px);
 }
-.w-50{width:50%;}
+
+/* FONTS */
+.fs-15{font-size:1.5rem;}
+.fs-20{font-size:2rem;}
+.fs-60vw{font-size:6vw;}
+.indie-flower{font-family: 'Indie Flower', cursive;}
+.handlee{font-family: 'Handlee', cursive;}
 .title-1{
     font-size:2.2rem;
     font-weight:500;
 }
+
+.w-50{width:50%;}
 .select-synergy{
     border-radius:0px 10px 10px 0px;
     background: URL('../../assets/images/select.jpg') no-repeat 100% #fff !important;
@@ -27,35 +32,44 @@ html{
     -webkit-appearance: none;
     appearance: none;
 }
-
+.border-r-2{
+    border-right:2px solid black;
+}
 .synergy-logo{bottom:0;}
 @media screen and (max-width:380px){.synergy-logo{width:90vw;}}
 @media screen and (min-width:381px) and (max-width:430px){.synergy-logo{width:80vw;}}
 @media screen and (min-width:411px) and (max-width:480px){.synergy-logo{width:70vw;}}
 @media screen and (min-width:481px) and (max-width:575px){.synergy-logo{width:60vw;;}}
-@media screen and (min-width:576px){.synergy-logo{right:20px;;}}   
-@media screen and (min-width:576px) and (max-width:670px){.synergy-logo{width:50vw;}}   
-@media screen and (min-width:671px) and (max-width:1200px){.synergy-logo{width:45vw;}}   
+@media screen and (min-width:576px){.synergy-logo{right:20px;position:absolute;bottom:0;}}   
+@media screen and (min-width:576px) and (max-width:1200px){.synergy-logo{width:45vw;}}   
 @media screen and (min-width:1201px) and (max-width:1600px){.synergy-logo{width:40vw;}}
 @media screen and (min-width:1601px){.synergy-logo{width:35vw;}}   
 
 .synergy-container{
-    height:100vh;
+    min-height:100vh;
     background-image:url('../../assets/images/background.jpg');
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
 }
 .timeline-container{
-    height:100vh;
     background-image:url('../../assets/images/timeline.jpg');
+}
+.parallax{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+    background-attachment: fixed;
+
 }
+.footer-container{
+    background-image:url('../../assets/images/timeline.jpg');
+} 
+
+
 .btn-primary-2{
     background-color:rgb(19,108,181);
-    color:white;
+    color:white; 
     border-color:#007bff;
 }
 .btn-timeline{
@@ -72,9 +86,6 @@ html{
 }
 .h-100vh{
     height:100vh;
-}
-.fs-60vw{
-    font-size:6vw;
 }
 .h-70vh{
     height:70vh;

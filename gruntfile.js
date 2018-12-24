@@ -26,7 +26,9 @@ module.exports = function(grunt) {
         'src/**/*.js',
         'src/*.html',
         'src/**/*.html',
-        'gruntfile.js'
+        'gruntfile.js',
+        'assets/js/*.js',
+        'assets/stylesheets/*.css',
       ]
     }
   });
