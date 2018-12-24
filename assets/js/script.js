@@ -40,10 +40,23 @@
             .success(function (data) {
                 $scope.events = data;
                 console.log('Este es el cid que esta siendo almacenado: '+data.cid);
-                $rootScope.cookieid = data.cid;
-                console.log($rootScope.cookieid);
+                $rootScope.cid = data.cid;
+                console.log($rootScope.cid);
                 $location.path('/timeline');
             });
         }
     });
+
+    // timeline Controller
+    routerSynergy.controller('timelineController', function($scope, $http, $rootScope) {
+    $scope.data = "";
+    $http({
+    method: 'get',
+    url: ' https://prueba-admision-web.herokuapp.com/data?cid=' +$rootScope.cid
+    }).then(function successCallback(response) {
+    $scope.data = response.data;
+    }, function errorCallback(response) {
+    });
+    });
+
 
