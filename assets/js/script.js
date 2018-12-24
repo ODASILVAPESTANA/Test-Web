@@ -40,10 +40,10 @@
             .success(function (data) {
                 $scope.events = data;
                 console.log('Este es el cid que esta siendo almacenado: '+data.cid);
-                $rootScope.cookieidentify = data.cid;
-                console.log($rootScope.cookieidentify);
+                $rootScope.cookieid = data.cid;
+                console.log($rootScope.cookieid);
                 $location.path('/timeline');
             });
         }
     });
-  
+
