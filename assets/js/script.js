@@ -36,14 +36,39 @@
         $scope.password = "";
         $scope.type = "";
         $scope.submit = function (){
-            $http.post('https://prueba-admision-web.herokuapp.com/session',{"type": $scope.type, "username": $scope.user, "password": $scope.password})
-            .success(function (data) {
-                $scope.events = data;
-                console.log('Este es el cid que esta siendo almacenado: '+data.cid);
-                $rootScope.cid = data.cid;
-                console.log($rootScope.cid);
-                $location.path('/timeline');
-            });
+            // Coloque las validaciones que se muestran a continuación por ser requisito dentro de la prueba de admision, sin embargo, considero que la opción mas conveniente es colocar el atributo booleano REQUIRED en el código html de cada input
+            if ($scope.type === "" ){
+                $('#exampleModalCenter').modal('show');
+                $rootScope.errormodal = 'Seleccione un tipo de identificación';
+                $rootScope.typemodal = 'ERROR'
+            }
+            else if ($scope.user === ""){
+                $('#exampleModalCenter').modal('show');
+                $rootScope.errormodal = 'El campo de usuario está vacio. Por favor escriba su usuario';
+                $rootScope.typemodal = 'ERROR'
+            }
+            else if ($scope.password === ""){
+                $('#exampleModalCenter').modal('show');
+                $rootScope.errormodal = 'El campo de contraseña está vacio. Por favor escriba su contraseña';
+                $rootScope.typemodal = 'ERROR'
+            }
+            else{
+                $('#exampleModalCenter').modal('show');
+                $rootScope.errormodal = 'Por favor espere..';
+                $rootScope.typemodal = 'Cargando';
+                $http.post('https://prueba-admision-web.herokuapp.com/session',{"type": $scope.type, "username": $scope.user, "password": $scope.password})
+                .success(function (data) {
+                    $scope.events = data;
+                    console.log('Este es el cid que esta siendo almacenado: '+data.cid);
+                    $rootScope.cid = data.cid;
+                    $('#exampleModalCenter').modal('hide');
+                    $location.path('/timeline');
+                })
+                .error(function (data) {
+                    $rootScope.errormodal = 'El usuario o la contraseña son incorrectas. Por favor verifique e intente nuevamente';
+                    $rootScope.typemodal = 'ERROR';
+                })
+            }
         }
     });
 

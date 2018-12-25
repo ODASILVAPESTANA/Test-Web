@@ -1,3 +1,4 @@
+<!-- Vista del login -->
 <div class="synergy-container d-flex j-center">
   <div class="w-100 text-center">
     <div class="row my-auto mx-0 p-0 w-100">  
@@ -5,26 +6,45 @@
           <p class="title-1 pl-3 text-left">Inicio de Sesión</p>
           <form ng-controller="appLogin" ng-submit="submit(userForm.$valid)" class="w-100">
             <div class="d-flex m-0">  
-                <select ng-model="type" class="ml-auto mb-3 col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5 form-control select-synergy">
-                  <option class="fs-15" selected value="">Seleccione..</option>
-                  <option class="fs-15" value="V">V</option>  
-                  <option class="fs-15" value="E">E</option>
-                  <option class="fs-15" value="P">P</option>   
-                </select>      
-              </div>  
-              <input type="text" ng-model="user" name="user" placeholder="Usuario" required class="form-control mb-3 w-100"/>
-              <input autocomplete="off" type="password" ng-model="password" name="password" placeholder="Contraseña" required class="mb-2 form-control w-100"/>
-              <div class="w-100 text-left">
-                <a onclick="alertOne()" href="#" class="w-100"><i class="pl-1 fs-15 text-left">¿Olvidó su contraseña?</i></a>
-              </div>
-                <div class="d-flex w-100 mt-4">  
-               <button type="submit" class="btn btn-primary-2 m-auto py-2 px-4 fs-15">Aceptar</button>
-              </div>    
-            </div>   
-          </form> 
+              <select ng-model="type" class="ml-auto mb-3 col-7 col-sm-8 col-md-7 col-lg-6 col-xl-5 form-control select-synergy">
+                <option class="fs-15" selected value="">Seleccione..</option>
+                <option class="fs-15" value="V">V</option>  
+                <option class="fs-15" value="E">E</option>
+                <option class="fs-15" value="P">P</option>   
+              </select>      
+            </div>  
+            <input type="text" ng-model="user" name="user" placeholder="Usuario" class="form-control mb-3 w-100"/>
+            <input autocomplete="off" type="password" ng-model="password" name="password" placeholder="Contraseña" class="mb-2 form-control w-100"/>
+            <div class="w-100 text-left">
+              <a onclick="alertOne()" href="#" class="w-100"><i class="pl-1 fs-15 text-left">¿Olvidó su contraseña?</i></a>
+            </div>
+            <div class="d-flex w-100 mt-4">  
+               <button type="submit" class="btn btn-primary-2 m-auto py-2 px-4 fs-15" data-toggle="modal">Aceptar</button>
+            </div>    
+          </div>   
+        </form> 
       </div>
       <img src="../assets/images/logo.png" class="synergy-logo" />
     </div>  
   </div>
-  </div>
+</div>
 
+<!-- Modal con errores en el POST -->
+<div class="modal fade show" id="exampleModalCenter" tabindex="-1" role="dialog" data-target="#myModal" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{typemodal}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{errormodal}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary-2" data-dismiss="modal">CERRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
