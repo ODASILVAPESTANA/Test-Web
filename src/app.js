@@ -1,20 +1,26 @@
 (function() {
-    var app = angular.module('appTestWeb', ['ui.router']);
-    //se inicia la aplicacion
-    app.run(function($rootScope,  $location,  $state) {
-        console.clear();
-        console.log('app corriendo');
+  var app = angular.module('TestWeb', ['ui.router']);
 
-    });
-    //configuramos los enrutadores de eventos
-    app.config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
+   app.run(function($rootScope, $location, $state, LoginService) {
+     console.clear();
+     console.log('running');
+  });
+
+  app.config(['$stateProvider', '$urlRouterProvider',
+  function($stateProvider, $urlRouterProvider) {
     $stateProvider
-    .state('login', {
-        url : '',
-        templateUrl : 'src/login.html',
+      .state('login', {
+        url : '/login',
+        templateUrl : 'src/views/login.html',
         controller : 'LoginController'
-    })
-    $urlRouterProvider.otherwise('/login');
+      })
+      .state('home', {
+        url : '/home',
+        templateUrl : 'src/views/home.html',
+        controller : 'HomeController'
+      });
+
+       $urlRouterProvider.otherwise('/login');
   }]);
+
 })();
