@@ -1,24 +1,77 @@
+html,body,.app{
+  height:100%;
+  width:100%;
+  margin: 0px;
+}
 .fondo {
   background: url('../../assets/images/background.jpg') no-repeat fixed center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
   width: 100% ;
-  background-size: 100% 100%;
   padding: 0px;
 }
-
-html,body{
-  height:100%;
-  width:100%;
-  margin: 0px;
-}
-
-.contenedor {
-  margin: 30px 0px 30px 0px;
-  padding: 10px;
-  background: rgba(255,255,255,0.5);
-  display: inline-block;
-}
+/*estilos para el contenedor y  los elementos del login*/
+  .contenedor {
+    background: rgba(255,255,255,0.68);
+  }
+  .login{
+    margin-left: 22px;
+    margin-top: 15px;
+  }
+  .tipodoc{
+    margin-left: 45%;
+  }
+  .centrarVertical {
+      height: 100vh;
+      width: 100vh;
+  }
+  .contentSelect {
+     margin:20px auto 40px auto;
+     height:38px;
+     overflow: hidden;
+     width: 230px;
+     position:relative;
+     border-radius: 0px 6px 6px 0px;
+  }
+  select {
+     background: transparent;
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 250px;
+     border-radius: 0px 6px 6px 0px;
+  }
+  .contentSelect::after{
+  	content:"\025be";
+  	display:table-cell;
+  	padding-top:7px;
+  	text-align:center;
+  	width:30px;
+  	height:38px;
+  	background-color:#007bff;
+  	position:absolute;
+  	top:0;
+  	right:0px;
+  	pointer-events: none;
+  }
+  .recuperar{
+    cursor: pointer;
+  }
+/*estilos para la ventana modal*/
+  #modalE {
+    position: absolute;
+    z-index:10;
+    height: 100vh;
+    width: 101%;
+    background: rgba(0,0,0,0.68);
+  }
+  .titleModal{
+    margin-left: 2px;
+  }
+/*estilos para el time line */
+  .contentTL{
+    padding: 15px 0px 15px 0px;
+  }

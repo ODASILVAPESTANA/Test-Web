@@ -1,7 +1,7 @@
 (function() {
   var app = angular.module('TestWeb', ['ui.router']);
 
-   app.run(function($rootScope, $location, $state, LoginService) {
+   app.run(function($rootScope, $location, $state) {
      console.clear();
      console.log('running');
   });

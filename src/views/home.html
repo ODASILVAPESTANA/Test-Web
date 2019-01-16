@@ -1,5 +1,18 @@
-<div class="col-md-12" style="width:500px;">
-    <div align="right"><a ui-sref="login">Logout</a></div>
-      <h4>Welcome {{user}}! </h4>
-      <p><strong>This is Home Page</strong></p>
+<div class="col-md-12 col-lg-12">
+ <!-- header -->
+ <div class="border-bottom contentTL">
+   <div class="row justify-content-between">
+     <div class="col-4"><h4>Bienvenido al TimeLine! </h4></div>
+     <!-- boton salir devuelve al login -->
+     <div class="col-4"><button type="button" class="btn btn-danger" ui-sref="login">Salir</button></div>
+   </div>
+ </div>
+ <div class="row contentTL bg-dark">
+     <!-- ciclo para recorrer los elementos del arreglo -->
+     <div ng-repeat="element in data" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 contentTL" align="center">
+       <img class="image" ng-src="{{element.thumbnailUrl}}"></img> <br>
+       <a id="textA" target="_blank" class="text-warning" ng-href="{{element.url}}">{{element.id}}</a>
+       <h6 class="text-warning">{{element.title}}</h6>
+     </div>
+ </div>
 </div>
