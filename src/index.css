@@ -1,0 +1,73 @@
+.login-screen {
+    background-image: url("/src/img/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(85, 70, 77);
+    height: 65%;
+    width: 41%;
+    margin-left: 0vw;
+    padding-left: 1vw;
+    margin-top: 10vw;
+}
+
+.login-label-top {
+    font-size:2.5vw;
+    padding-bottom: 2vw;
+}
+
+.login-input-dropdown {
+    height: 4vw;
+    border-color: rgba(199, 240, 246);
+    width: 10vw;
+    border-radius: 0vw;
+    margin-left: 22.1vw !important;
+}
+
+.login-input-dropdown-button {
+    height: 4vw;
+    background-color: rgba(34, 119, 186);
+    color: white !important;
+    margin-bottom: 1vw;
+}
+
+.login-input {
+    height: 4vw;
+    border-color: rgba(199, 240, 246);
+    width: 35vw;
+    margin-bottom: 1vw;
+}
+
+.login-link-pass-forgot {
+    font-size: 1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1vw;
+}
+
+.login-btn {
+    margin-top: 1vw;
+    width: 10vw;
+    margin-left: 15vw;
+    font-size: 1.5vw;
+    color: white;
+    background-color: rgba(34, 119, 186);
+}
+
+.login-logo {
+    position: absolute;
+    right: 10;
+    bottom: 10;
+} 
+
+/*
+.login-input-group {
+    padding-bottom: 1em;
+}
+
+*/
