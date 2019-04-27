@@ -19,22 +19,26 @@
 
 .login-label-top {
     font-size:2.5vw;
-    padding-bottom: 2vw;
+    padding-bottom: 3vw;
+}
+
+.user-type {
+    margin-left: 22vw !important;
+    margin-bottom: 1vw;
 }
 
 .login-input-dropdown {
-    height: 4vw;
+    height: 3vw;
     border-color: rgba(199, 240, 246);
-    width: 10vw;
     border-radius: 0vw;
-    margin-left: 22.1vw !important;
+    color: lightgray;
+    width: 10.4vw;
 }
 
 .login-input-dropdown-button {
-    height: 4vw;
+    height: 3vw;
     background-color: rgba(34, 119, 186);
     color: white !important;
-    margin-bottom: 1vw;
 }
 
 .login-input {
@@ -44,10 +48,14 @@
     margin-bottom: 1vw;
 }
 
-.login-link-pass-forgot {
+.login-pass-forgot {
     font-size: 1.5vw;
     padding-top: 0.5vw;
-    padding-bottom: 1vw;
+    padding-bottom: 3vw;
+    height: 1vw;
+    background-color: transparent;
+    border: none;
+    color: rgba(34, 119, 186);
 }
 
 .login-btn {
@@ -58,16 +66,3 @@
     color: white;
     background-color: rgba(34, 119, 186);
 }
-
-.login-logo {
-    position: absolute;
-    right: 10;
-    bottom: 10;
-} 
-
-/*
-.login-input-group {
-    padding-bottom: 1em;
-}
-
-*/

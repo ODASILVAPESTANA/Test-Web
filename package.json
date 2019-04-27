@@ -27,6 +27,8 @@
   "dependencies": {
     "bootstrap": "3.3.x",
     "jquery": "^1.12.4",
-    "angular": "1.7.x"
+    "angular": "1.7.x",
+    "angular-route": "1.7.x",
+    "angular-resource": "1.7.x"
   }
 }

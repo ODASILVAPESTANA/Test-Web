@@ -4,70 +4,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SYNERGY-GB</title>
+    
     <link rel="stylesheet" href="/src/lib/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/src/index.css">
+    <link rel="stylesheet" type="text/css" href="/src/style.css">
+    <link rel="stylesheet" type="text/css" href="/src/login/login.style.css">
+    <link rel="stylesheet" type="text/css" href="/src/timeline/timeline.style.css">
+    
     <script src="/src/lib/angular/angular.js"></script>
-    <script src="/src/app.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
-  </head>
-  <body ng-controller="LoginController">
-    <div class="login-screen">
-      <div class="login-box">
-        <div>
-          <h3 class="login-label-top">Inicio de Sesión</h3>
-          <form name="loginForm" class="css-form" novalidate>
-            
-            <div class="btn-group">
-              <button type="button" class="btn login-input-dropdown">Seleccione...</button>
-              <button type="button" class="btn dropdown-toggle login-input-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>.</button>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </div>
-
-            <input class="login-input" type="text" ng-model="user.name" name="uName" placeholder="Usuario" required="" />
-            
-            <input class="login-input" type="email" ng-model="user.email" name="uEmail" placeholder="Contraseña" required="" />
-
-            <div class="text-left login-link-pass-forgot">
-                <a><i>¿Olvidó su Contraseña?</i></a>
-            </div>
-
-            <input type="submit" class="btn login-btn" ng-click="login(user)" value="Aceptar" />
-          
-          </form>
-        </div>
-      </div>
-    </div>
-    
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-danger">¡Error!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Debe rellenar el campo {{missingField}}.
-                </div>
-                <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-primary login-btn" data-dismiss="modal">Aceptar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="login-logo">
-        <img class="login-logo" src="/src/img/synergy-logo-blue.png"></img>
-    </div>
-
+    <script src="/src/lib/angular-route/angular-route.js"></script>
+    <script src="/src/lib/angular-resource/angular-resource.js"></script>
     <script src="/src/lib/jquery/dist/jquery.js"></script>
     <script src="/src/lib/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <script src="/src/app.module.js"></script>
+    <script src="/src/app.config.js"></script>
+    <script src="/src/services/services.module.js"></script>
+    <script src="/src/services/login/login.module.js"></script>
+    <script src="/src/services/login/login.service.js"></script>
+    
+    <script src="/src/login/login.module.js"></script>
+    <script src="/src/login/login.component.js"></script>
+    <script src="/src/timeline/timeline.module.js"></script>
+    <script src="/src/timeline/timeline.component.js"></script>
+
+    <script src="//localhost:35729/livereload.js"></script>
+  </head>
+  <body>
+    <ng-view></ng-view>
   </body>
 </html>
