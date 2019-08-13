@@ -2,8 +2,37 @@
   <head>
     <script src="//localhost:35729/livereload.js"></script>
     <link rel="stylesheet" type="text/css" href="./src/css/login.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/angular/angular.js"></script>
   </head>
   <body class="body" >
+    <div class="container col-5" >
+    <h4>Inicio de Sesión</h4>
+    <form>
+      
+        <div class="form-group row justify-content-end" id="select_properties">
+          <select class="form-control col-3" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        </div>
+        <div class="form-group">
+          <a href="" class="link"><p>Olvidó su contraseña?</p></a>
+        </div>
+        <div class="row justify-content-center">
+            <button type="submit" class="btn btn-primary">Aceptar</button>
+        </div>
+      </form>
+    </div>
     
   </body>
 </html>

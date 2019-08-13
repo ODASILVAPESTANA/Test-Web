@@ -1,24 +1,26 @@
 .body{
     background-image:url("../../assets/images/background.jpg");
-    
-
-
-background-position: center center;
-
-/* Para que la imagen de fondo no se repita */
-
-background-repeat: no-repeat;
-
-/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-
-background-attachment: fixed;
-
-/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-
-background-size: cover;
-
-/* Se muestra un color de fondo mientras se está cargando la imagen
-
-de fondo o si hay problemas para cargarla */
-
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    /*background-attachment: fixed;*/
+    background-size: cover;
 }
+
+.container{
+    width: 65%;
+    height: 45%;
+    background-color: rgba(255,255,255,0.5);
+    margin-top: 10%;
+    float: left;
+}
+
+.link{
+    font-style: italic;
+    text-decoration: none;
+}
+
+#select_properties{
+    margin-right: 1%;
+}
+
