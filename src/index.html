@@ -1,9 +1,110 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <script src="//localhost:35729/livereload.js"></script>
+      
+      <script src="//localhost:35729/livereload.js"></script>
+      <meta charset="utf-8">
+      <base href="/">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.min.js"></script>
+
+      <script type="text/javascript"  src="../js/controlador.js"></script>
+
+    <style>
+    body{
+     
+      background-image: url("../assets/images/background_5.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .container{
+      padding-top: 15%;
+    }
+
+    .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    opacity: 0.8;
+}
+    </style>
+  
   </head>
-  <body>
-    <h1> Grunt is running! </h1>
-    <h2> :) </h2>
+
+  <body >
+      <div ng-app="spa" ng-controller="controlador" class="container">
+
+          <div class="row">
+              <div class="col-xs-2 col-md-2"></div>
+              <div class="col-xs-8 col-md-6">
+                  <div class="card">
+                      <div class="card-body">
+                              <h2>Inicio de Sesión</h2>
+                              <form name="myform" id="myform">
+
+                                  <label for="email">Nacionalidad</label>
+                                  <ul class="nav nav-tabs" id="tipo">
+
+                                    <li class="dropdown">
+                                          <a class="dropdown-toggle" data-toggle="dropdown">Seleccione
+                                    <span class="caret"></span></a>
+                                        
+                                          <ul class="dropdown-menu">
+                                          <li ng-click="setNacionalidad('V')" >V</li>
+                                          <li ng-click="setNacionalidad('E')" >E</li>                        
+                                          <li ng-click="setNacionalidad('P')" >P</li>
+                                           </ul>
+                                      </li>
+                                  </ul>
+                                 
+                                  <label for="email">Usuario</label>
+                                  <input ng-model="usuario" type="text" class="form-control" id="usr" placeholder="Enter email" name="email" required>
+                                
+                                  <label for="pwd">Contraseña</label>
+                                  <input ng-model="contrasena" type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                  <br>
+                                  <a href="#">¿Olvido su Contraseña?</a>
+                                  <br>
+                                <button id="send" type="button"  ng-click="send(usuario, contrasena)" class="btn btn-primary">Enviar</button>
+                              </form>
+                        
+                            </div>
+                          </div>
+
+              </div>
+              <div class="col-xs-2 col-md-2"></div>
+        }
+        }
+      
+        </div>
+      <!-- Button trigger modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4 id="tipofalt">
+            
+          </h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
