@@ -2,8 +2,7 @@
     background-image:url("../../assets/images/background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -14,6 +13,7 @@
     background-color: rgba(255,255,255,0.7);
     margin-top: 10%;
     float: left;
+    padding-bottom: 5%;
 }
 .title{
     margin: 1% 1%;
@@ -32,10 +32,18 @@
     height: 100%;
 }
 #logo{
-    width: 45%;
-    height: 25%;
+
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
 
+.phone-enter {
+    opacity:0;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-out-cubic;
+    -webkit-transition-duration: 400ms;
+  }
+  .phone-enter.phone-enter-active {
+    opacity: 1;
+  }

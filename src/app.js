@@ -1,5 +1,6 @@
 
-var app = angular.module('app',['ngRoute']);
+var app = angular.module('app',['ngRoute','ngAnimate']);
+
 var url = "https://prueba-admision-web.herokuapp.com/session";
     app.config(['$routeProvider', 
     function($routeProvider){
@@ -11,13 +12,6 @@ var url = "https://prueba-admision-web.herokuapp.com/session";
         .when('/timeline/:cid', {
             templateUrl: 'src/timeline.html',
             controller: 'timelineCtrl',
-            resolve: {
-                data: function($http,$routeParams,$location)
-                {   console.log("data tl");
-                    console.log($routeParams,$routeParams.cid, $location.search().cid);
-                   
-                }
-            }
         })
         .otherwise({
             redirectTo: '/login'
@@ -26,19 +20,17 @@ var url = "https://prueba-admision-web.herokuapp.com/session";
     ]);
 
 
+
     app.controller('loginCtrl',function($scope,$http,$location){
-        console.log("login controller ");
+        $scope.title = "Login";
         $scope.send = function(){
-            console.log("send",$scope.loginForm);
             $http.post(url,$scope.loginForm).then(
                 function (response){
-                    console.log("Good",response);
-                    //alert("Inicio exitoso "+response.data.cid);
-                    var newCid = response.data.cid;
+                   var newCid = response.data.cid;
                     $location.url('/timeline/'+ newCid);
                 },
                 function(error){
-                    alert("Datos erròneos");
+                    alert("Datos erróneos");
                 }
             )
         }
@@ -48,21 +40,23 @@ var url = "https://prueba-admision-web.herokuapp.com/session";
         }
 
         $scope.invalidField = function(){
-            console.log("campos invalido");
+            $('#modalField').modal('show'); // abrir
+            //$('#modalField').modal('hide'); // cerrar
         }
 
 
     });
 
     app.controller('timelineCtrl',function($scope,$http,$routeParams){
+        $scope.title = "TimeLine";
         $http.get("https://prueba-admision-web.herokuapp.com/data?cid="+$routeParams.cid).then(
             function(value){
-                console.log("EXITO",value);
+                $scope.information = value.data;
+                $scope.visible = true;
+                
             },
             function(error){
-                console.log("ERROR",error);
+                alert("ERROR",error);
             }
         )
-        console.log("timeline "+$routeParams.cid);
-
     })
