@@ -1,0 +1,39 @@
+<div class="home-section">
+	<div class="login-box">
+		<h5 class="text-left mb-2">Inicio de Sesión</h5>
+		<form [formGroup]="formLogin" (ngSubmit)="login(formLogin.value)">
+			<div class="row">
+				<div class="col-md-6"></div>
+				<div class="form-group col-md-6">
+					<select class="form-control" formControlName="type">
+						<option value="" disabled>Seleccione...</option>				
+	        			<option *ngFor="let letter of letters" [ngValue]="letter.abbrev">
+	          					{{ letter.abbrev }}
+	        			</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" id="user" placeholder="Usuario" class="form-control" formControlName="username">
+			</div>
+
+			<div class="form-group">
+				<input type="password" id="password" placeholder="Contraseña" class="form-control" formControlName="password">	
+			</div>
+			
+            <div class="row">              
+                <div class="text-left" style="color:blue">
+                    <button type="button" class="btn btn-link" (click)="recuperarContrasena()">
+                    	¿Olvidó su contraseña?
+                    </button>
+                </div>
+            </div>
+
+			<div class="text-center mt-2">
+				<button class="btn btn-primary btn-lg" type="submit">
+	                Aceptar
+	            </button>
+			</div>
+		</form>
+	</div>
+</div>

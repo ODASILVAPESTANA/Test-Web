@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+	<div class="container">
+		<a class="navbar-brand" [routerLink]="['home']">Bootstrap WebSite</a>
+		<button type="button" 
+		        class="navbar-toggler" 
+		        data-toggle="collapse"
+				data-target="#menu-principal"
+				aria-controls="menu-principal"
+				aria-expanded="false"
+				aria-label="Desplegar Menu">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="menu-principal">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item" routerLinkActive="active">
+					<a class="nav-link" [routerLink]="['home']">Home</a>
+				</li>
+				<li class="nav-item" routerLinkActive="active">
+					<a class="nav-link" [routerLink]="['about']">About</a>
+				</li>
+				<li class="nav-item" routerLinkActive="active">
+					<a class="nav-link" [routerLink]="['contact']">Contact</a>
+				</li>
+				<li class="nav-item" routerLinkActive="active">
+					<button type="button" class="btn btn-link" (click)="exit()">
+                    	Logout
+                    </button>
+				</li>				
+			</ul>
+		</div>
+	</div>	
+</nav>

@@ -1,0 +1,71 @@
+<section class="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="header-content-left">
+					<img src="../../../assets/image1.png" class="w-100">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="header-content-right">
+					<h1 class="display-4">Lorem ipsum dolor.</h1>
+					<p class="mt-5">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident impedit consequuntur nisi voluptatem optio eligendi, molestias maxime dolor molestiae! Rerum necessitatibus quo unde neque, assumenda consequatur sequi maiores harum numquam.
+					</p>
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalData">
+						Ver Data
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container jumbotron mt-3">
+		<div class="row">
+			<div class="col-12 text-center">
+				<p class="h3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia placeat, quaerat error, perferendis commodi totam reprehenderit maiores, animi numquam suscipit tempora ipsam natus eum obcaecati inventore blanditiis deleniti modi?
+				</p>
+				<h4>- Oscar Mejia -</h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Modal -->
+<div id="modalData" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  	<div class="modal-dialog modal-xl">
+    	<div class="modal-content">
+       		<div class="modal-header">
+        		<h5 class="modal-title" id="exampleModalLabel">Data</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          	<span aria-hidden="true">&times;</span>
+		        </button>
+      		</div>
+      		<div class="modal-body">
+		        <table class="table table-sm">
+				  	<thead>
+					    <tr>
+					      <th scope="col">id</th>
+					      <th scope="col">Title</th>
+					      <th scope="col">URL</th>
+					      <th scope="col">thumbnailUrl</th>
+					    </tr>
+				  	</thead>
+
+				  	<tbody>
+					    <tr *ngFor="let d of data">
+					      <td>{{ d.id }}</td>
+					      <td>{{ d.title }}</td>
+					      <td>{{ d.url }}</td>
+					      <td>{{ d.thumbnailUrl }}</td>
+					    </tr>
+				  	</tbody>
+				</table>
+      		</div>    
+    	</div>
+  	</div>
+</div>
