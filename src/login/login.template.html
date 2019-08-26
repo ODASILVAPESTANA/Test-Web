@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="card col-md-6 login-form-1">
+    <h3 class="mb-2 mt-1">Inicio de Sesión</h3>
+    <form>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle mb-2" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{user.type}}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li ng-repeat="type in types" ng-click="setType(type)">{{type}}</li>
+        </ul>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Usuario*" ng-model="user.username" required/>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Contraseña*" ng-model="user.password" required/>
+      </div>
+      <div class="form-group text-center">
+        <input type="submit" class="btnSubmit" value="Login" ng-click="signIn(user)"/>
+      </div>
+      <div class="form-group">
+        <a class="ForgetPwd" ng-click="recoverPassword()">Olvidaste tu contraseña?</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="errorModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Error</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Falta un campo por llenar</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>

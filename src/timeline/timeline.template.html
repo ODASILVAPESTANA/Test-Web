@@ -1,0 +1,13 @@
+<div class="container">
+  <ul>
+    <li ng-repeat="item in data">
+      <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">{{item.title}}</div>
+        <div class="card-body">
+          <img src="{{item.thumbnailUrl}}">
+          <p class="card-text">{{item.url}}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
