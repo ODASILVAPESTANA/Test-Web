@@ -1,0 +1,10 @@
+<h1>Hola {{currentUser.firstName}}!</h1>
+<p>Has iniciado sesion !!</p>
+<h3>Todos los usuarios Registrados</h3>
+<ul>
+    <li *ngFor="let user of users">
+        {{username}} ({{user.tipo}} )
+        - <a (click)="deleteUser(user.id)" class="text-danger">Borrar</a>
+    </li>
+</ul>
+<p><a [routerLink]="['/login']">Cerrar sesion</a></p>
